@@ -4,9 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>table</title>
 </head>
 <body>
-    
+    <table>
+        <caption>month / savings table</caption>
+        <colgroup>  
+            <col style="width:150px; background-color: red;">
+            <col style="width:300px; background-color: yellow;">
+        </colgroup>
+        <thead>
+            <tr>
+                <th>Month</th>
+                <th>Savings</th>
+            </tr>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <td>Sum</td>
+                <td>$180</td>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <td>jan</td>
+                <td>$200</td>    
+            </tr>
+            <tr>
+                <td>feb</td>
+                <td>$80</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <!-- tr = table row(행) -->
+    <!-- 행을 늘리고 싶을 때마다 tr 선언후 사용 -->
+    <!-- th = 분류(table head) -->
+    <!-- thead안에는 th만 사용 가능 -->
+    <!-- tfoot는 head~body 사이에 -->
+    <!-- tfoot는 중간에 들어가지 않고 맨 밑에 들어간다. -->
 </body>
 </html>
