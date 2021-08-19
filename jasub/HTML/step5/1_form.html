@@ -69,7 +69,48 @@
             <ul>
                 <li>
                     <label for="userName">이름 :</label>
-                    <input type="text" id="userName" required maxlength="8" autofocus readonly>
+                    <input type="text" id="userName" required maxlength="8" value="hello" autofocus readonly>
+                </li>
+                <br>
+                <li>
+                    <input type="email" title="사용하시는 메일을 입력하세요" placeholder="aaa@gmail.com">
+                </li>
+                <br>
+                <li>
+                    <input type="url" title="주소를 입력하세요" placeholder="https://www.naver.com">
+                </li>
+                <br>
+                <li>
+                    <label for="selectnumber">수량:</label>
+                    <input type="number" id="selectnumber" min="10" max="99" step="1" value="10">
+                </li>
+                <br>
+                <li>
+                    <label for="selectSize">사이즈 선택:</label> 
+                    <input type="range" id="selectSize" min="-5" max="5" step="1" value="0" onchange="viewrange(this)"><br>
+                    <input type="text" id="rangevalue" value="0">
+                    <script>
+                        function viewrange(obj)
+                        {
+                            document.getElementById('rangevalue').value = obj.value;
+                        }
+                    </script>
+                </li>
+                <br>
+                <li>
+                    <input type="date"><br>
+                    <input type="month"><br>
+                    <input type="week"><br>
+                    <input type="datetime-local">
+                </li>
+                <br>
+                <li>
+                    <input type="search" placeholer="검색어를 입력하세요">
+                </li>
+                <br>
+                <li>
+                    <label for="typeColor">색상 :</label>
+                    <input type="color" id="typeColor">
                 </li>
             </ul>
         </fieldset>
@@ -92,6 +133,14 @@
 
     <!-- required : 필수적으로 입력 해야 하는 항목 -->
     <!-- autofocus : 페이지를 실행 시켰을때 포커스를 맞추는 것  -->
-    <!-- readonly : 오직 read용 -->
+
+    <!-- readonly : 사용자만 수정 불가능 -->
+    <!-- disable : 서버,사용자 전부 수정 불가능하게 만드는 것 -->
+    <!-- readonly vs disable의 차이점 꼭 확인 -->
+
+    <!-- inputtype="~" : 각 타입마다 제공해주는 키보드의 형식이 다름 ex)url은 .com을 키보드에서 제공 해준다. -->
+    <!-- step : 증가단계 // value : 시작값 -->
+
+    <!-- date/datetime-local을 위주로 쓴다 -->
 </body>
 </html>
