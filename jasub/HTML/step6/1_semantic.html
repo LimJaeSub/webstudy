@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semantic Tag</title>
+</head>
+<body>
+    <header>
+        <h1>Logo</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.naver.com">Menu</a>
+                </li>
+            </ul>
+        </nav>
+        <!-- nav-ul-li 구조는 보통 정형화되있다 -->
+        <p>
+            모든 page에서 공통으로 사용하는 상단 영역(global)<br>
+            page 상단 logo, navigation(nav)<br>
+            *전역변수라고 생각하면 편함
+        </p>
+    </header>
+    <!-- 만약 어떤 사이트의 헤더의 구조가 굉장히 복잡하지만 모든 페이지의 헤더가
+    똑같다면 코드를 따로 빼두고 각 html파일에 복사 붙여넣기 하는 식??
+    ex)헤더가 똑같지만 메인페이지 html , 고객센터 html 등등
+    아니면 헤더 파일을 따로 선언해주고 필요할때마다 가져오는지 -->
+    <!-- header -->
+    <section>
+        <h2>section에는 머릿글을 넣어줘야 한다.</h2>
+        <p>
+            복합적인 컨텐츠 그룹<br>
+            명확히 내용이 별도로 구분 되는 경우<br>
+            들어가는 section
+        </p>
+        <article>
+            <h3>article에는 머릿글을 넣어줘야 한다.</h3>
+            <p>
+                article 자체로 이해 될 수 있고<br>
+                독립적으로 취급될 수 있는 문서 content만 사용하는 article<br>
+                공유가능한 신문기사, 블로그 포스팅 등
+                <!-- 웹으로 공유되서 단독적으로 활용되는 컨텐츠들이 사용 -->
+                <!-- section과 p태그 의 중간 정도 -->
+                <!-- section > article -->
+                <!-- div는 범위가 정해져 있지 않다. -->
+            </p>
+            <time datetime="2021-08-20T11:32:03+09:00">
+                <!-- datetime의 속성을 정해준다. -->
+                <!-- 날짜T시간+기준시 -->
+                2021년 08월 20일 오전 11:30
+            </time>
+        </article>
+    </section>
+    <!-- section -->
+    <aside>
+        전체적으로 사용하는 global(선택적)중 측면에 있는 요소<br>
+        ex)menu / bannerbar / quickmenu / etc...
+        <!-- aside에도 header/footer가 사용될 수 있다. -->
+        <!-- 그러나 aside는 유저가 사용하지 않으면 disable상태 -->
+        <!-- 위의 특징이 section과 aside의 가장 큰 차이점 -->
+    </aside>
+    <!-- 중앙 말고 사이드(사방면)에 포함되는 구역은 모두 aside라고 칭함 -->
+    <!-- aside -->
+    <footer>
+        contact(회사주소,메일,전화번호 같은 정보들)<br>
+        이와 관련된 메뉴가 들어가는 global
+    </footer>
+</body>
+</html>
+<!-- UI에서 toggle은 굉장히 위험하다 -->
+
+
