@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body > ul li{border:1px solid black; width:250px; list-style:none;}
+        body > ul li figure{position:relative;}
+        body > ul li figure img{width:100%;}
+        body > ul li figure:hover figcaption{display:block;}
+        body > ul li figure figcaption{display:none; position:absolute; width:100%; height:100%; background-color:rgba(0,0,0,0.5); left:0; top:0;}
+        body > ul li figure figcaption dl{text-align:center; color:white; padding:0;}
+        body > ul li figure figcaption dl dt{font-size:24px;}
+        body > ul li figure figcaption dl dd{margin:0;}
+    </style>
+</head>
+<body>
+    <figure>
+        <img src="https://via.placeholder.com/200x270" alt="undefined">
+        <figcaption>
+            <dl>
+                <dt>
+                    <mark>6</mark>
+                    <button>pick</button>
+                    <a href="">
+                        <time datetime="2021-08-20T11:32:03+09:00">2021.08.20</time>
+                        내용
+                    </a>
+                </dt>
+                <dd>
+                    <span>viewcount</span>
+                    <span>pickcount</span>
+                </dd>
+                <dd>
+                    <strong>
+                        플라스틱 아일랜드
+                    </strong>
+                </dd>
+            </dl>
+        </figcaption>
+    </figure>
+    <!-- figure은 이미지와 그것에 대한 설명글(figcaption) -->
+    <!-- img가 상징적인 부분에 대해 활용 -->
+    <ul>
+        <li>
+            <figure>
+                <img src="https://via.placeholder.com/250x250" alt="example">
+                <figcaption>
+                    <dl>
+                        <dt>example head</dt>
+                        <dd>example desctipt</dd>
+                        <dd>example price</dd>
+                    </dl>
+                </figcaption>
+            </figure>
+        </li>
+    </ul>
+
+    <progress value="20" max="100"></progress>
+    <meter value="80" max="100" min="10" high="90" low="20"></meter>80%
+    <!-- progress는 현재진행중 (ing) -->
+    <!-- meter는 현재 상황을 출력해줌 (ed) -->
+    <!-- progress : 진행도 // meter : 저장소 공간 -->
+    <!-- 둘다 max는 100으로 한다. -->
+    <ruby>
+        <!-- 번역 -->
+    </ruby>
+    <address>
+        by <a href="https://www.example.com">example.com</a>
+        mailto : <a href="mailto:liso_o@naver.com">email</a>
+        address : <a href=""></a>
+        tel <a href=""></a>
+    </address>
+    <details>
+        <summary>Copyright 2021.</summary>
+        <p>
+            "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        </p>
+        <p>
+            What is Lorem Ipsum?
+        </p>
+    </details>
+    <!-- lipsum.com -->
+</body>
+</html>
