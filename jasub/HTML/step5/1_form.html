@@ -9,11 +9,14 @@
 <body>
     <form>
         <fieldset>
+            <!-- fieldset : form 요소를 하나의 박스로 묶는 것 -->
+            <!-- fieldset과 legend는 같이쓰인다. -->
             <legend>HTML4 input</legend>
             <ul>
                 <li>
                     <!-- <label for="username">사용자 이름 :</label> -->
                     <input type="text" id="username" placeholder="사용자 이름" title="사용자 이름 입력">
+                    
                 </li>
                 <li>
                     <input type="password" title="비밀번호를 입력하세요" maxlength="4">
@@ -40,6 +43,7 @@
                 </li>
                 <li>
                     <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <!-- 텍스트area -->
                 </li>
                 <li>
                     <select>
@@ -52,6 +56,7 @@
                             <option>공무원</option>
                         </optgroup>
                     </select>
+                    <!-- 선택창 -->
                 </li>
                 <li>
                     <input type="image" src="https://via.placeholder.com/100x50?text=imageButton" alt="imgButton">
@@ -59,6 +64,7 @@
                     <button>우편번호확인2</button>
                     <!-- 각 앱의 os스타일에 베이스를 두어 버튼 모양이 바뀐다. -->
                     <input type="file">
+                    <!-- 파일선택 : default는 버튼이다. -->
                     <input type="submit" value="확인">
                     <input type="reset" value="취소">
                 </li>                
@@ -70,14 +76,23 @@
                 <li>
                     <label for="userName">이름 :</label>
                     <input type="text" id="userName" required maxlength="8" value="hello" autofocus readonly>
+                    <!-- for와 id는 연결되는 개념 -->
+                    <!-- label은 시각적 정보를 전달하기 위해 효과적임 -->
+                    <!-- maxlength : 정해진 숫자만큼 더이상 적지 못함 -->
+                    <!-- readonly : 사용자만 수정 불가능 -->
+                    <!-- disable : 서버,사용자 전부 수정 불가능하게 만드는 것 -->
+                    <!-- readonly vs disable의 차이점 꼭 확인 -->
+
+                    <!-- required : 필수적으로 입력 해야 하는 항목 -->
+                    <!-- autofocus : 페이지를 실행 시켰을때 포커스를 맞추는 것  -->
                 </li>
                 <br>
                 <li>
-                    <input type="email" title="사용하시는 메일을 입력하세요" placeholder="aaa@gmail.com">
+                    <input type="email" title="input mail" placeholder="aaa@gmail.com">
                 </li>
                 <br>
                 <li>
-                    <input type="url" title="주소를 입력하세요" placeholder="https://www.naver.com">
+                    <input type="url" title="address" placeholder="https://www.naver.com">
                 </li>
                 <br>
                 <li>
@@ -115,11 +130,8 @@
             </ul>
         </fieldset>
     </form>
-    <!-- 실질적으로 시작하는 공간 : fieldset -->
-    <!-- title : legend -->
-    <!-- for와 id는 연결되는 개념 -->
-    <!-- label은 시각적 정보를 전달하기 위해 효과적임 -->
-    <!-- maxlength : 정해진 숫자만큼 더이상 적지 못함 -->
+    
+    
 
     <!-- radio : or로받음 // checkbox : and로 받음 -->
     <!-- radio의 id값과 lable의 for값이 같으면 lable을 클릭해도 radio에 선택이 됨 -->
@@ -131,12 +143,9 @@
     <!-- button은 작동 자체에 의의를 둠(앱에서도 사용 가능) -->
     <!-- 역할은 같다. -->
 
-    <!-- required : 필수적으로 입력 해야 하는 항목 -->
-    <!-- autofocus : 페이지를 실행 시켰을때 포커스를 맞추는 것  -->
 
-    <!-- readonly : 사용자만 수정 불가능 -->
-    <!-- disable : 서버,사용자 전부 수정 불가능하게 만드는 것 -->
-    <!-- readonly vs disable의 차이점 꼭 확인 -->
+
+
 
     <!-- inputtype="~" : 각 타입마다 제공해주는 키보드의 형식이 다름 ex)url은 .com을 키보드에서 제공 해준다. -->
     <!-- step : 증가단계 // value : 시작값 -->
