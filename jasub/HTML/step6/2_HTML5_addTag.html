@@ -83,5 +83,46 @@
         </p>
     </details>
     <!-- lipsum.com -->
+    <main>
+        <h1>Web Browsers</h1>
+        <p>
+            Google Chrome , Firefox , and internet Explorer.
+        </p>
+        <article>
+            <h2>Chrome</h2>
+            <p>
+                Google Chrome is a free
+            </p>
+        </article>
+    </main>
+    <!-- index에 한번 쓸 수 있다. -->
+    <!-- 
+        document 내 해당하는 section,page등을 mainpage로 선언.
+        한 문서당 1번.
+        구조상 최상위(body직계)
+     -->
+     <form oninput="x.value = parseInt(a.value)+parseInt(b.value)">
+         0
+         <input type="range" id="a" value="50">
+         100
+         +
+         <input type="number" id="b" value="50">
+         =
+         <output id="x" for="a b"></output>
+     </form>
+
+    <!-- !이하 IE 7,8,9 safari 지원불가 -->
+    <h1>BrowserList</h1>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Internet Explorer">IE</option>
+        <option value="FireFox">FF</option>
+        <option value="Chrome">CR</option>
+        <option value="Opera">O</option>
+        <option value="Safari">SF</option>
+    </datalist>
+    <!--select와 유사함. 입력요소에 대한사전 정의 목록을 넣어두는데 활용.
+        동시에 사용자가 입력필드에 해당 옵션일부를 작성하면 일치되는 결과값 출력.
+        (자동완성기능)-->
 </body>
 </html>
