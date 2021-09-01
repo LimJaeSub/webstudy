@@ -1,0 +1,36 @@
+body{
+    margin:0;
+    font-size: 12px;
+    color:#67f
+}
+/* 자식 태그에 고유한  */
+
+/* 각 태그의 스타일을 설정 */
+h1{
+    font-size:14px;
+    color:red;
+}
+img{
+    width:150;
+    height:150;
+    border:10px solid #003320;
+}
+
+
+/* 같이 수정해야 할 때 */
+ul,ol,dl{
+    color:navy;
+}
+
+/* 하위태그를 수정 해야할때 */
+ul li{
+    font-size: 15px;
+    font-weight:bold;
+}
+ol li{
+    font-size:20px; text-decoration:underline;
+}
+
+dl dt,dl dd{
+    font-size:50px;
+}
