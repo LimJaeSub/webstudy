@@ -1,0 +1,16 @@
+html,body{
+    height:100%;
+}
+
+body,p{
+    margin:0;
+}
+
+.wrap{
+    background-color:skyblue; height:100%;
+}
+/* wrap class의 height를 이용해 배경 전체를 컨트롤하려면 상속의 */
+p{
+    background-color: forestgreen; color:white; padding:15px;
+}
+

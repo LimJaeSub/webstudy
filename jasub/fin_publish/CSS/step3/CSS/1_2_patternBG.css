@@ -1,0 +1,36 @@
+html,body,.wrap{
+    height:100%;
+}
+
+body{
+    margin:0;
+}
+
+.wrap{
+    background-image: url('../images/pt.gif');
+    /* background-image는 패턴의 속성을 가지고 있다. */
+    /* 똑같은 이미지로 전체를 채우려는 느낌 */
+}
+
+.wrap p{
+    background-color:#0cf;
+    padding:20px;
+    margin-bottom:20px;
+}
+
+.wrap button{
+    line-height:75px;
+    padding:0 40px;
+    color:white;
+    border:none;
+    background-image: url('../images/pt_ex.png');
+
+    background-repeat:repeat-x;
+    /* 패턴이 일어나는 방향을 통제한다. */
+    /* repeat-x : x축 방향으로 나타나는 패턴을 통제한다. */
+
+    /* no repeat : 패턴이 일어나지 않게 */
+    /* repeat : xy축 통제 */
+    
+    /* repeat != no repeat <<?? */
+}
