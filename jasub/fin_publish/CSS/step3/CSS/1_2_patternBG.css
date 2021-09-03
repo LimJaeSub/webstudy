@@ -27,10 +27,10 @@ body{
 
     background-repeat:repeat-x;
     /* 패턴이 일어나는 방향을 통제한다. */
-    /* repeat-x : x축 방향으로 나타나는 패턴을 통제한다. */
+    /* repeat-x : x축으로만 패턴이 나타나게. */
 
     /* no repeat : 패턴이 일어나지 않게 */
-    /* repeat : xy축 통제 */
-    
-    /* repeat != no repeat <<?? */
+    /* repeat : default */
+
+
 }
