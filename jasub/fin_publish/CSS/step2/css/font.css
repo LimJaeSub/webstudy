@@ -43,3 +43,40 @@ p.t_indent{
     border: none; width: 150px; line-height: 50px; font-size: 12px;
     text-indent: -9999px;
 }
+
+a{
+    display:block;
+    /* a는 inline이라 글자처럼 취급됨 */
+    line-height:35px;
+    /* 글자간의 간격(높이) */
+}
+
+
+/* ============================================================ */
+a.t_deco_N{text-decoration : none; text-transform:none; color:#090;}
+/* a태그는 text-decoration의 default가 underline이다. decoration을 none을주면 밑줄이 삭제됨 */
+a.t_deco_U{text-decoration : underline; text-transform:lowercase; color:#0cf;}
+/* a태그의 text-decoration에 underline을 넣어주는 경우는 없다 */
+/* lowercase : 소문자로 변환 , 사용자의 화면에 소문자로 강제 출력(영문만) */
+a.t_deco_O{text-decoration : overline; text-transform:capitalize; color:#7ac;}
+/* capitalize : 영문 앞자를 대문자로 변환 */
+a.t_deco_T{text-decoration : line-through; text-transform:uppercase; color:#c79;}
+/* uppercase : 대문자로 변환 */
+/* linethorugh : 텍스트를 가로지르는 줄 생성  (<delete>)*/
+/* ============================================================ */
+
+
+
+
+/* ============================================================ */
+/* <텍스트 진행 방향> */
+p.DR_ltr{
+    direction:ltr;
+}
+/* left to right */
+
+p.DR_rtl{
+    direction:rtl
+}
+/* right to left */
+/* ============================================================ */
