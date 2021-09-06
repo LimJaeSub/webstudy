@@ -1,0 +1,29 @@
+<!-- 내장함수 -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1.eval()
+        // 자바스크립트의 문장이 매개변수로 전달된 문자열이면, 그 문장을 자바스크립트 문장으로 인식하여 처리
+        var test_string = "20+15";
+        alert(eval(test_string));
+        // 결과값 : 35
+
+        // 2.isNaN()
+        // 주어진 값이 숫자인지 아닌지를 판별하는 함수
+        var strl = "1234eqw";
+        document.write(isNaN(strl));
+        //결과값 : false
+
+        
+    </script>
+</body>
+</html>
