@@ -4,37 +4,86 @@ body{
     font-family: 'Nanum Gothic';
 }
 
+
+
+/* ================================================================ */
 h1{
-    font-size: 20px; line-height: 30px; width: 50px; color: rgba(30,30,30,0.75);
+    font-size: 20px; 
+    line-height: 30px; 
+    width: 50px; 
+    color: rgba(30,30,30,0.75);
 }
-h2{font-size:15px; line-height:21px; color:#966;}
 
-h3{font-size:13px; line-height:19px; color:#F90;}
 
+h2{
+    font-size:15px; 
+    line-height:21px; 
+    color:#966;
+}
+
+
+h3{
+    font-size:13px; 
+    line-height:19px; 
+    color:#F90;
+}
+/* ================================================================ */
+
+
+
+
+/* ================================================================ */
 p{
     font-size: 14px;
 }
 
 p.letter{
-    letter-spacing: -1px;
+    letter-spacing: 20px;
+    /* 글자 간 간격 */
 }
+
 p.word{
-    word-spacing: 10px;
+    word-spacing: -5px;
+    /* 단어 사이의 간격 */
 }
+/* ================================================================ */
+
+
+
+
+
+/* ================================================================ */
 p.w_normal{
-    width: 150px; white-space: normal; line-height: 21px;
+    width: 150px; 
+    white-space: normal; 
+    /* width에 맞춰서 텍스트가 나오도록 함 */
+    line-height: 21px;
     border: 3px solid greenyellow;
 }
 p.w_nowrap{
-    width: 150px; white-space: nowrap; text-overflow: ellipsis;
-    overflow: hidden; border: 3px solid greenyellow;
+    width: 350px; 
+    white-space: nowrap; 
+    /* 텍스트가 무조건 일자로만 나오게 함 */
+    text-overflow: ellipsis;
+    /* 텍스트가 width를 넘겼을때 나오는 모습 */
+    overflow: hidden; 
+    /* 넘어간건 감춰주기 */
+    border: 3px solid greenyellow;
 }
+/* ================================================================ */
+
+
+/* 이부분 */
 .v_alignTest img{
-    width: 200px; height: 200px; vertical-align: middle;
+    width: 500px; height: 500px; vertical-align: 10%;
 }
 .v_alignTest span{
-    vertical-align: 100%;
+    vertical-align: 30%;
 }
+/* 여기잘모르겠음 */
+
+
+
 p.t_indent{
     text-indent: 200px; font-size: 40px;
 }

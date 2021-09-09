@@ -1,0 +1,51 @@
+div{
+    width:300px;
+    height:150px;
+    margin-bottom:10px;
+}
+
+.singleBox{
+    border-width:3px;
+    border-style:solid;
+    border-color:#60f;
+    /* border:테두리 선 굵기 */
+    /* solid : 테두리 선의 유형 중 하나 */
+}
+
+.multiBox{
+    border-width : 1px 3px 10px 25px;
+    border-style:solid dotted dashed double;
+    border-color:#112431 #f06 #0f6 #fc6;
+    /* 시계방향으로 각 변의 속성 설정 */
+
+    border-top:1px solid #112431;
+    border-right:3px dotted #f06;
+    border-bottom: 10px dashed #0f6;
+    border-left: 25px double #fc6;
+    /* 방향성 분리: 각 방향별로 속성 설정 */
+
+    border-width : 1px 10px;
+    border-style:solid dotted;
+    border-color:#112431 #f06;
+    /* 상하 : 1px solid #112431 */
+    /* 좌우 : 3px dotted #f06 */
+
+    border-width : 1px 3px 50px;
+    border-style:solid dotted dashed;
+    border-color:#112431 #f06 #fc6;
+    /* top : 1px solid #112431 */
+    /* 좌우 : 3px dotted #f06 */
+    /* bottom : 50px dashed #fc6 */
+    
+}
+
+.circlebox{
+    background-color:midnightblue;
+    color:white;
+    width:500px;
+    height:500px;
+    border-radius: 250px;
+    /* 테두리 깎아내는것 */
+    text-indent: -9999px;
+}
+

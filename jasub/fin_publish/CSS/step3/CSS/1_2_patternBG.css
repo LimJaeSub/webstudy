@@ -25,7 +25,7 @@ body{
     border:none;
     background-image: url('../images/pt_ex.png');
 
-    background-repeat:repeat-x;
+    background-repeat: repeat;
     /* 패턴이 일어나는 방향을 통제한다. */
     /* repeat-x : x축으로만 패턴이 나타나게. */
 

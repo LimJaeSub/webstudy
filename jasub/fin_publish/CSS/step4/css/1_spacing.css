@@ -1,0 +1,23 @@
+body{
+    margin:0;
+    padding-top:30px;
+    padding-left:30px;
+    padding-right:30px;
+}
+.firstDiv{
+    margin:30px;
+    background-color:#555;
+}
+.firstDiv article{
+    background-color:#039;
+    color:white;
+}
+.secondDiv{
+    margin:30px;
+    background-color:#ddd;
+    padding:0 10px 10px;
+}
+.secondDiv article{
+    background-color:#930;
+    
+}
