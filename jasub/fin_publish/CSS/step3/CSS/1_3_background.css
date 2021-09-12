@@ -13,7 +13,7 @@ body{
 
     background-attachment:fixed;
     /* background image를 고정(휠 조작시 이미지 고정) */
-    /* != scroll */
+    /* fixed != scroll */
 }
 
 p{

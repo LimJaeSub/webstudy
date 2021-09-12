@@ -1,0 +1,63 @@
+#wrap{
+    width:300px;
+    height:200px;
+    margin:0 auto;
+    background-color:navajowhite;
+    position:relative;
+    /* 가장 상위태그에 relative를 적용시켜줘서 밑에태그인 absulute가 relative를 따라간다. */
+    overflow-y : scroll;
+    /* 보이지 않는 곳(y)을 scroll으로 바꿔서 보여지게 함 */
+}
+
+#wrap div{
+    width:150px;
+    height:150px;
+    position:absolute;
+}
+#wrap .redbox{
+    background-color:red;
+    color:white;
+    width:150px;
+    height:150px;
+    left: 10px;
+    top: 10px;
+    z-index:3;
+}
+
+#wrap .greenbox{
+    background-color:green;
+    width:150px;
+    height:150px;
+    left: 50px;
+    top: 50px;
+    z-index:2;
+}
+
+#wrap .bluebox{
+    background-color:blue;
+    color:white;
+    width:150px;
+    height:150px;
+    left: 90px;
+    top: 90px;
+    z-index:1;
+}
+
+/* z-index : 레벨이라고 생각하면 편함 */
+/* 클수록 사용자하고 가까움 */
+
+
+
+
+/* relative = 일반 block과 레벨이 같음.
+xpos , ypos(위치입력) = > 레벨이 달라진다.(위로 뜬다)
+
+
+absolute : 태어날때부터 위에 떠있음(레벨이 다름)
+기준좌표는 relative(자신의 부모,상위태그)를 따르지만 relative가 없을경우 browser를 따른다.
+
+fixed: 태어날때부터 위에 떠있음(레벨이 다름)
+기준좌표->browser(브라우저의 좌측 상단)
+scroll의 영향을 받지 않는다.
+
+fixed/absolute : width가 상실됨, width:100%가 필수가된다. */

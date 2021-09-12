@@ -11,12 +11,14 @@ ul{
     margin:0 auto;
     /* ?-width를 정해주면 height는 자동으로 정해지는것? */
 }
+
 ul:after{
     content:'';
     display:block;
     visibility: hidden;
     clear:both;
 }
+/* 이거ㅏ모르겠음 */
 ul li{
     display:block;
     float:left;

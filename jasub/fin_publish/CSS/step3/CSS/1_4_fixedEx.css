@@ -11,17 +11,19 @@ html,body{
 body{
     
     background-image:url('../images/example.jpg');
-    background-repeat:no-repeat;
+    background-repeat:repeat;
     /* background-position: center top;
     background-position: center bottom;
     background-position: center right;
     background-position: center left; */
     background-position: center;
 
-    background-size: contain;
+    /* background-size: contain;  */
     background-size: cover;
-    /* background-size :contain,cover 추가로 검색해보기 */
-    /* 배경을 딱 맞춰주는 것 */
+    
+    /* cover : 이미지를 배경 전체에 빈틈없이 딱 맞춰주는 것 */
+    /* contain : 이미지 전체가 보여지도록 설정 */
+    
 
     background-attachment: fixed;
     /* 배경 이미지 고정 */

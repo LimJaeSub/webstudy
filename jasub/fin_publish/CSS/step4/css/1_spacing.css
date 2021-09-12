@@ -1,8 +1,8 @@
 body{
     margin:0;
     padding-top:30px;
-    padding-left:30px;
-    padding-right:30px;
+    /* padding-left:30px;
+    padding-right:30px; */
 }
 .firstDiv{
     margin:30px;
@@ -21,3 +21,54 @@ body{
     background-color:#930;
     
 }
+.centerDiv{
+    border:1px solid #33f;
+    padding:10px 20px;
+    /* 처음에 10px였는데 왜 20px로 변경하였냐면 */
+    /* article과 좌우 10px 떨어져야하므로 상하는 10px그대로 좌우는 10+10=20px */
+    width:300px;
+
+    margin: 0 auto;
+    /* 중앙으로 이동 시켜주는것 */
+    /* width는 브라우저의 넓이보다 작아야만 중앙으로 간다. */
+
+    text-align:center;
+    /* article 자체가 중앙으로 간 것이 아닌 article의 부모태그인 centerDiv에 상속받아
+    가는것 */
+}
+
+.centerDiv article{
+    /* margin:0 10px; */
+
+    /* centerdiv와의 수치를 조정하는 것이므로 margin은 적절하지 않다. */
+    /* article에서 margin으로 조정하는 것이 아닌 centerdiv에서 padding으로 조절해야함 */
+    background-color:red;
+    color:white;
+}
+/* 마진이랑 패딩은 무조건 가산+(섞이지않음)된다. */
+
+
+.paddingDiv{
+    padding: 10px 20px;
+    border:3px solid #333;
+    background-color:#fF3;
+    width:100px;
+    box-sizing:border-box
+    /* width=좌우길이 */
+    /* 100px를 줬는데 개발자도구에는 왜 146px이 나오는가? */
+    /* solve) 좌우 패딩 20px씩 + border 3px씩 40+6 = 46 */
+    /* 따라서 146px이된다. */
+
+    /* 만약 width가 %수치로 조정되어있으면 나중에 작업할때 width값이 계속 바뀐다. */
+    /* 해결법 : boxsizing : border-box */
+    /* border-box을 하면 수치가 가산되지 않고 무조건 설정한 값으로만 적용된다. */
+    /* width가 padding하고 border을 모두 안고가는 느낌 */
+    /* border-box를 설정하면 개발자도구에서 더이상 146px이 아닌 width값 100px로 된다. */
+
+}
+
+.paddingDiv article{
+    background-color:blue;
+    color:white;
+}
+
