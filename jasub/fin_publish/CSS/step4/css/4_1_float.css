@@ -1,0 +1,7 @@
+.wrap{
+    background-color: gray;
+}
+
+.wrap .exam1 img{
+    float:left
+}
