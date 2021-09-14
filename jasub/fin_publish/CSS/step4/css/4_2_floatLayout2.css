@@ -1,0 +1,78 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.wrap{
+    width:960px;
+    margin:0 auto;
+}
+
+.wrap header{
+    background-color:orange;
+}
+.wrap header:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+/* nav가 위로 올라가면서 부모의 높이를 잡아먹으므로 after+clear를 이용해 높이를 복구시켜준다. */
+.wrap header h1{
+    background-color:red;
+    width:130px;
+    float:left;
+    text-align:center;
+    color:white;
+    font-size:20px;
+    line-height:55px;
+}
+.wrap header nav{
+    background-color:blue;
+    width:830px;
+    float:left;
+    /* width가 830인이유? : wrap의 (width가 960-130=830) */
+}
+/* inline,inline-block : 옆에 붙음 */
+/* block : 옆에 안붙음 */
+
+.wrap header nav ul{
+    text-align:center;
+}
+.wrap header nav ul li{
+    display:inline-block;
+}
+/* 부모공간내에서 inline-block으로 변환시켜주고 가운데정렬 해주면 됨 */
+.wrap header nav ul li a{
+    color:white;
+    line-height:55px;
+    display:block;
+}
+section{
+    margin-bottom:300px;
+    background-color:orchid;
+}
+section:after{
+    content:'';
+    display:block;
+    clear:both;
+}
+section h2{
+    background-color:skyblue;
+}
+section article{
+    float:left;
+    width:33.33%;
+}
+section article h3{
+    background-color:black;
+    color:white;
+}
+section article ul li{
+    display:block;
+    font-size:14px;
+    line-height:55px;
+}
+footer{
+    text-align:center;
+    background-color:olive;
+}

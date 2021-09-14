@@ -1,0 +1,54 @@
+*{
+    margin:0;
+    padding:0;
+}
+.wrap1{
+    width:960px;
+    margin:0 auto;
+}
+.wrap1 header{
+    background-color:cadetblue;
+    text-align:center;
+}
+.wrap1 header .LOGO{
+    background-color:coral;
+    width:30%;
+    height:50%;
+    margin:0 auto;
+    
+}
+.wrap1 header .searchbar{
+    float:right;
+}
+nav{
+    background-color:cornflowerblue;
+    height:50%;
+    clear:both;
+}
+.wrap1 header nav ul li{
+    display:inline-block;
+    line-height:50px;
+}
+
+.wrap2 section article{
+    border-style:solid;
+    border-width:3px;
+    width:32%;
+    display:inline-block;
+}
+.wrap2 section article ul{
+    margin-top:20px;
+}
+.wrap2 section article ul li{
+    display:block;
+    font-size:14px;
+}
+footer{
+    background-color:darkgrey;
+    color:white;
+    text-align:center;
+    line-height:30px;
+    height:30px;
+}
+
+/* tag의 높이가 글씨 크기에 따라 정해지는건 어떻게 해결하는가? */

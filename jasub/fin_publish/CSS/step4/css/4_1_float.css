@@ -1,7 +1,33 @@
 .wrap{
     background-color: gray;
 }
-
-.wrap .exam1 img{
-    float:left
+.wrap .exam_1 img{
+    float: right;
 }
+.wrap .exam_2{
+    background-color: midnightblue;
+}
+.wrap .exam_2 div{
+    background-color: slateblue; width: 300px; height: 300px; float: left;
+}
+/* float는 밑에것까지 끌어올린다. */
+
+.wrap .exam_2:after{
+    content:'';
+    display:block;
+    visibility:hidden;
+    clear:both;
+    /* clear가 붙어야만 float가 해제가 된다. */
+    /* 위에 css에서 float를 left로 설정해준 상태 */
+    /* 여기 css에서 float를 clear로 해제  */
+    /* float 당사자들의 부모가 after를 가진다. */
+
+}
+
+.wrap exam_3{
+    background-color:yellow;
+    clear:left;
+}
+
+
+

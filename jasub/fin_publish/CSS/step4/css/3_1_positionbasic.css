@@ -61,3 +61,8 @@ fixed: 태어날때부터 위에 떠있음(레벨이 다름)
 scroll의 영향을 받지 않는다.
 
 fixed/absolute : width가 상실됨, width:100%가 필수가된다. */
+
+
+/* fixed : 생성시 다른 레벨,top/bottom 입력시 브라우저의 좌측 상단이 기준 */
+/* relative : top/bottom입력시 다른 레벨,기존 좌표가 기준이 됨 */
+/* absolute : 생성시 다른 레벨,기준좌표는 relative(자신의 부모,상위태그)를 따르지만 relative가 없을경우 browser를 따른다. */
