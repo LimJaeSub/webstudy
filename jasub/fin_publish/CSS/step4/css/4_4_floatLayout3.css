@@ -1,4 +1,4 @@
-*{
+/* *{
     margin:0;
     padding:0;
 }
@@ -9,32 +9,40 @@
 .wrap1 header{
     background-color:cadetblue;
     text-align:center;
+    position:relative;
+    searchbar의 좌표를 위해 relative를 설정해줌
 }
 .wrap1 header .LOGO{
     background-color:coral;
     width:30%;
     height:50%;
     margin:0 auto;
-    
+    0 auto를 이용해 가운데로 오게 만듬
 }
 .wrap1 header .searchbar{
-    float:right;
+    position:absolute;
+    right:30px;
+    bottom:40px;
+    이부분 몰랐음
+    position설정해서 띄워주면 됨
 }
-nav{
+.wrap1 header nav{
     background-color:cornflowerblue;
     height:50%;
-    clear:both;
 }
 .wrap1 header nav ul li{
     display:inline-block;
     line-height:50px;
 }
-
+.wrap2 section{
+    margin-top:30px;
+}
 .wrap2 section article{
     border-style:solid;
     border-width:3px;
     width:32%;
     display:inline-block;
+    inline-block으로 설정하여 inline속성을 적용시킴(block처럼 안되게)
 }
 .wrap2 section article ul{
     margin-top:20px;
@@ -43,12 +51,109 @@ nav{
     display:block;
     font-size:14px;
 }
-footer{
+.wrap1 footer{
     background-color:darkgrey;
     color:white;
     text-align:center;
-    line-height:30px;
-    height:30px;
+    line-height:50px;
 }
 
-/* tag의 높이가 글씨 크기에 따라 정해지는건 어떻게 해결하는가? */
+tag의 높이가 글씨 크기에 따라 정해지는건 어떻게 해결하는가? */
+
+
+
+/* =============================solve========================================= */
+
+body{
+    width:960px;
+    margin:0 auto;
+}
+header{
+    background-color:#6ff;
+    position:relative;
+}
+header h1{
+    width: 250px;
+    background-color:slateblue;
+    color:white;
+    text-align:center;
+    font-size:16px;
+    line-height:40px;
+    margin:0 auto;
+}
+header div{
+    position:absolute;
+    top:27px;
+    right:0;
+}
+header nav{
+    background-color:steelblue;
+}
+header nav ul{
+    text-align:center;
+    margin:0;
+    padding:0; 
+}
+header nav ul li{
+    display:inline-block;
+}
+.marginLeft{
+    margin-left:40px;
+}
+header nav ul li a{
+    text-decoration:none;
+    color:black;
+    line-height:40px;
+    display:block;
+    /* a를 쓸때는 보통 display:block이 따라온다 */
+    /* block을 주면 부모의 크기만큼 활성화가 되기 때문(선택이편하게) */
+}
+header nav ul li a:hover{
+    color:#fff;
+    /* 마우스 가져다 대면 흰색으로 바뀜 (hover) */
+}
+
+
+/* header fin */
+
+
+.wrap:after{
+    content:'';
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+.wrap div{
+    margin-bottom:30px;
+}
+
+/* .wrap article{
+    width:33%;
+    display:inline-block;
+    border:1px solid #999;
+    box-sizing:border-box;
+} */
+/* inline-block을 하면 강제로 margin이 주어진다. */
+/* 이거때문에 내려감,float가 편하다. */
+
+.wrap article{
+    width:310px;
+    float:left;
+    border:1px solid #999;
+    box-sizing:border-box;
+}
+
+.wrap article.latest2,
+.wrap article.latest3{
+    margin-left:15px;
+}
+
+footer{
+    background-color:springgreen;
+    line-height:40px;
+    text-align:center;
+}
+
+
+
+

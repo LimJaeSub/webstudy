@@ -1,0 +1,21 @@
+
+ul{
+    width:100%;
+}
+ul li{
+    list-style:none;
+    float:right;
+    width:33%;
+    height:33%;
+    border:1px solid red;
+}
+/* ul li figure{
+    float:left;
+} */
+ul li figure img{
+    float:left;
+}
+ul li figure figcaption{
+    float:left;
+}
+
