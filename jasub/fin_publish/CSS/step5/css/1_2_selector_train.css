@@ -1,0 +1,89 @@
+/* body{
+    margin:0;
+}
+
+article{
+    max-width:100%;
+
+}
+
+body>*:nth-child(2n+1)>:not(p){
+    float:right;
+    text-align:right;
+    margin: 0 10px 20px 0; 
+    clear:both;
+}
+
+body>*:nth-child(2n)>:not(p){
+    float:left;
+    text-align:left;
+    margin: 0 20px 10px 0; 
+    
+}
+article>*:first-child{
+    color:white;
+    background-color:gray;
+    width: 30%; 
+    line-height: 110px;
+    font-size: 100px;
+}
+
+article p{
+    font-size:14px;
+}
+
+article p>strong{
+    color:#09f;
+    text-decoration:underline;
+}
+
+article p>mark{
+    background-color:transparent;
+    color:#09f;
+} */
+
+
+
+body{
+    margin:0;
+}
+
+article{
+    margin-bottom:30px;
+    overflow:hidden;
+}
+
+article>*:first-child{
+    font-size:200px;
+    line-height:140px;
+    width:40%;
+    background-color:gray;
+    color:white;
+    /* 공통적인 부분 */
+}
+
+article:nth-of-type(odd)>*:first-child{
+    float:right;
+    text-align:right;
+    margin:0 0 10px 20px;
+}
+
+article:nth-of-type(even) >*:first-child{
+    float:left;
+    margin:0 20px 10px 0;
+}
+
+article p{
+    margin:0;
+}
+
+article p>*:not(mark){
+    text-decoration:underline;
+}
+
+article p>mark{
+    color:#09f;
+}
+
+
+
