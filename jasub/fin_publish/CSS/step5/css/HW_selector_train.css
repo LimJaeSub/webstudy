@@ -1,0 +1,92 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+body>ul{
+    /* 크기조절,리스트 가운데 이동,리스트 점 빼기 */
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    list-style:none;
+    padding:0;
+}
+
+body>ul li{
+    /* 리스트 전체 속성 설정 */
+    background-color:rgb(199, 191, 191);
+    font-size:10px;
+    color:gray;
+}
+body>ul li:first-child{
+    /* 리스트 메뉴만 색깔 변경 */
+    background-color:darkslateblue;
+}
+body>ul li:nth-child(2n){
+    /* 짝수 리스트 줄 색깔 변경 */
+    background-color:rgb(221, 217, 217);
+}
+body>ul li span{
+    /* li내 span 전체 속성 설정 */
+    display:inline-block;
+    /* span은 width가 적용이 안되므로 inline-block으로 설정하여 width적용 */
+    width:15%;
+    margin:10px 0;
+}
+body>ul li span:nth-child(2){
+    /* 두번째 항목 속성 설정 */
+    color:hotpink;
+    width:40%;
+}
+body>ul li:nth-child(2n):hover{
+    /* 짝수번 마우스 갓다대면 색깔 변함 */
+    background-color:rgb(223, 162, 223);
+    color:black;
+}
+body>ul li:nth-child(2n-1):not(li:first-child):hover{
+    /* 홀수번 마우스 갓다대면 색깔 변함 */
+    background-color:rgb(110, 99, 209);
+    color:black;
+}
+body>div{
+    /* 페이징 부분 설정 */
+    width:960px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+body>div>a{
+    /* 화살표 전체 속성 */
+    display:inline-block;
+    width:50px;
+}
+
+body>div ol{
+    /* 페이징 */
+    list-style:none;
+    display:inline-block;
+    margin:0;
+    padding:0;
+    font-size:13px;
+}
+body>div ol li{
+    /* 페이징 번호를 감싸는 li */
+    display:inline-block;
+    width:50px; 
+}
+body>div ol li a{
+    /* 페이징 번호 */
+    text-decoration:none;
+    display:block;
+}
+body>div ol li a:hover{
+    /* 페이징 번호 */
+    background-color:pink;
+    border:solid 1px white;
+    border-radius:10px;
+}
+form fieldset{
+    /* 맨밑에 검색창 */
+    width:206px;
+    border:hidden;
+    margin:20px auto 0;
+}

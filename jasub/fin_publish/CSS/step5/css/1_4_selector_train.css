@@ -1,0 +1,30 @@
+html,body{
+    margin:0;
+    padding:0;
+}
+body>div{
+    max-width:960px;
+    margin:0 auto;
+}
+div form fieldset{
+    border-radius:10px;
+    border-color:skyblue;
+}
+div fieldset label{
+    display:inline-block;
+}
+div form fieldset textarea{
+    display:block;
+    width:99%;
+    border:1px solid #50f;
+    padding:10px 1%;
+    box-sizing:border-box;
+    margin:25px auto 0;
+    resize:none;
+    height:300px;
+}
+div fieldset input[type='checkbox']:checked+textarea{
+    height:0px;
+    padding:0 1%;
+}
+
