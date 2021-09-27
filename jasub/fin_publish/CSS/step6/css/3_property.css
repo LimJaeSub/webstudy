@@ -1,0 +1,12 @@
+.visibilityProperty span{
+    background-color:#ff6a00;
+    display:block;
+    border:1px solid blue;
+}
+.visibilityProperty span:first-child{
+    visibility:visible;
+}
+.visibilityProperty span:nth-child(2){
+    height:500px;
+    visibility:hidden;
+}
