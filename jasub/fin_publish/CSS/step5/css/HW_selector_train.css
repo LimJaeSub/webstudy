@@ -31,6 +31,7 @@ body>ul li span{
     /* span은 width가 적용이 안되므로 inline-block으로 설정하여 width적용 */
     width:15%;
     margin:10px 0;
+    vertical-align:middle;
 }
 body>ul li span:nth-child(2){
     /* 두번째 항목 속성 설정 */
@@ -90,3 +91,13 @@ form fieldset{
     border:hidden;
     margin:20px auto 0;
 }
+
+
+
+/* 
+    전체를 설정하고 fisrtchild를 설정하여 취소시키지 말고 
+    not:firstchild // firstchild를 통해 
+    전체와 첫번째(또는 해당 부분)을 나누는게 가장 좋음<<--중요
+
+    두개가 동시에 들어가는 속성만 부모 태그에 쓰기
+*/

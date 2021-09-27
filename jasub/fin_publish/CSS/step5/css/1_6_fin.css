@@ -1,0 +1,168 @@
+body{
+    width:80%;
+    margin:0 auto;
+    font-family:'Segoe UI',Tahoma,Geneva,Verdana,sans-seri;
+}
+h1{
+    position:relative;
+    margin:0;
+    padding: 15px 50% 15px 0;
+    font-size:30px;
+    font-weight:normal;
+    color:gray;
+}
+h1 a{
+    position:absolute;
+    right:0;
+    bottom:0;
+    width:50%;
+    display:block;
+    text-align:right;
+    color:darkblue;
+    font-size:24px;
+}
+fieldset{
+    padding:10px 40% 10px 0;
+    position:relative;
+    border-width:2px 0 1px;
+    border-style:solid none;
+    border-color:#c4c4c4;
+}
+fieldset input[type='search']{
+    width:20%;
+    border:1px solid springgreen;
+    background-color:wheat;
+    min-width:115px;
+}
+fieldset input[type='button']{
+    width:10%;
+    background-color:forestgreen;
+    color:white;
+    border-color:black;
+}
+fieldset select{
+    position:absolute;
+    right:0;
+    width:25%;
+    min-width:120px;
+}
+h2{
+    padding: 30px 0; margin: 0;
+}
+h2 :not(strong){
+    color: #555;
+}
+h2 strong{
+    color: deepskyblue;
+}
+h2 strong:not(:nth-of-type(2)){
+    text-transform: capitalize;
+}
+h2 strong:nth-of-type(2){
+    text-transform: uppercase;
+}
+
+/* 게시판 */
+ul{
+    padding:0;
+    margin:0 0 30px;
+    list-style:none;
+}
+
+
+/* ====================================================================== */
+/* 두개 통합되는 속성만 쓰기 */
+ul li{
+    position:relative;
+}
+
+/* 전체를 설정하고 fisrtchild를 설정하여 취소시키지 말고 */
+ul li:first-child{
+    border-width:3px 0 1px;
+    border-style:solid;
+    border-color:darkred;
+    padding:10px 0;
+}
+/* not:firstchild를 통해 전체와 첫번째를 나누는게 best */
+ul li:not(:first-child){
+    border-bottom :1px solid black;
+}
+
+
+/* 따로 튀어나온걸 먼저 작성하고 그 나머지를 not으로 작성하기 */
+
+/* ====================================================================== */
+
+ul li:nth-child(2n){
+    background-color:#9a9a9a;
+}
+ul li:after{
+    content:'';
+    display:block;
+    visibility:hidden;
+    clear:both;
+}
+ul li span{
+    display:block;
+    float:left;
+    padding:10px 2.5%;
+    /* 좌우를 줄이거나 늘렸을때 크기대로 같이 줄어들면 %로 설정 */
+    /* 적응성이 좋게 해야함 */
+    font-size:14px;
+}
+ul li span:not(:nth-child(2)){
+    width:15%;
+    /* 되도록 고정값을 주지 말고 %로 설정하자 */
+}
+ul li span:nth-child(2){
+    width:35%; 
+    /* 되도록 고정값을 주지 말고 %로 설정하자 */
+}
+
+ul li mark{
+    position:absolute;
+    right:0;
+    top:0;
+    /* 따로 동떨어져 있는걸 보면 position:absoulte부터 생각 해보자 */
+}
+
+body>div{
+    max-width:400px;
+    margin:0 auto;
+    position:relative;
+    /* a태그를 absolute를 줬으므로 부모를 따라오게 하기 위해 relative를 줬음 */
+}
+body>div>a{
+    position:absolute;
+    display:block;
+    top:0;
+    text-decoration:none;
+}
+body>div>a:first-of-type{
+    left:0;
+}
+body>div>a:last-of-type{
+    right:0;
+}
+body>div>ol{
+    padding:0 25px;
+    margin:0;
+    list-style:none;
+    text-align:center;
+}
+body>div>ol li{
+    display:inline-block;
+}
+body>div>ol li a{
+    text-decoration:none;
+    font-size:14px;
+    padding:5px;
+    color:#00556b;
+}
+body>div>ol li a:hover{
+    color:red;
+}
+
+
+
+
