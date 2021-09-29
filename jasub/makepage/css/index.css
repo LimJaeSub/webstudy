@@ -1,0 +1,27 @@
+body{
+    margin:0;
+    background-color:skyblue;
+}
+.wrap{
+    /* wrap으로 감싼 모든 부분을 중간에 위치하게 한다 */
+    width:70%;
+    margin:0 auto;
+}
+header{
+    width:100%;
+}
+header h1{
+    float:left;
+    background-color:red;
+}
+header nav{
+    float:right;
+    background-color:yellow;
+}
+header nav ul{
+    list-style:none;
+}
+header nav ul li{
+    float:left;
+}
+
