@@ -7,21 +7,32 @@ body{
     width:70%;
     margin:0 auto;
 }
-header{
+.wrap header{
+    margin-top:5%;
+    margin-bottom:5%;
     width:100%;
 }
-header h1{
-    float:left;
-    background-color:red;
+.wrap header:after{
+    content: ''; display: block; clear: both;
 }
-header nav{
+.wrap header h1{
+    margin:0;
+    background-color:red;
+    float:left;
+}
+.wrap header nav{
     float:right;
+    width:50%;
     background-color:yellow;
 }
-header nav ul{
+.wrap header nav ul{
     list-style:none;
 }
-header nav ul li{
+.wrap header nav ul li{
     float:left;
+    margin-right:3%;
+}
+.section1{
+    background-color:brown;
 }
 
