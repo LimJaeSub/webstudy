@@ -75,7 +75,7 @@ div{
     /* display: none; */
     opacity: 0;
 }
-.opacityProperty ul li figure figcaption{
+/* .opacityProperty ul li figure figcaption{
     position: absolute; 
     width: 50%;  
     height: 50%; 
@@ -85,7 +85,7 @@ div{
     text-align: center; 
     opacity: 1;
     transition: opacity 0.75s ease-in-out;
-}
+} */
 .opacityProperty ul li figure figcaption dl dt{
     font-size: 18px; font-weight: bold; margin-bottom: 30px;
 }

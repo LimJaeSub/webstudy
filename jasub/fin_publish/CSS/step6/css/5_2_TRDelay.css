@@ -14,33 +14,33 @@ ul{
 .delay1 span{
     background-color:skyblue;
     display:block;
-    width:10px;
+    width:30px;
     height:50px;
     background-color:#0cf;
     margin:5px;
-    transition-duration: 5s;
+    transition-duration: 3s;
 }
-.delay1:hover span{
+.delay1 span:nth-child(1):hover{
     width:600px;
 }
-.delay1 span:nth-child(1){
-    transition-delay:1s;
+.delay1 span:nth-child(2):hover{
+    width:500px;
 }
 
-.delay1 span:nth-child(2){
-    transition-delay:2s;
+.delay1 span:nth-child(3):hover {
+    width:400px;
 }
 
-.delay1 span:nth-child(3){
-    transition-delay:3s;
+.delay1 span:nth-child(4):hover{
+    width:200px;
 }
 
-.delay1 span:nth-child(4){
-    transition-delay:4s;
+.delay1 span:nth-child(5):hover{
+    width:300px;
 }
 
-.delay1 span:nth-child(5){
-    transition-delay:5s;
+.delay1 span:nth-child(2):hover a:before{
+    content:'+';
 }
 
 
