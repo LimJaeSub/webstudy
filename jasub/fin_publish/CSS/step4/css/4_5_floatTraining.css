@@ -24,6 +24,7 @@ ul li figure > *{
     float: left; 
     width: 49%; 
     margin-bottom: 10px;
+    /* figure의 직계의 모든것들 */
 }
 ul li figure img{
     margin-right: 2%;

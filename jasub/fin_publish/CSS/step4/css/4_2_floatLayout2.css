@@ -19,7 +19,7 @@
 /* nav가 위로 올라가면서 부모의 높이를 잡아먹으므로 after+clear를 이용해 높이를 복구시켜준다. */
 .wrap header h1{
     background-color:red;
-    width:130px;
+    width:20%;
     float:left;
     text-align:center;
     color:white;
@@ -28,7 +28,7 @@
 }
 .wrap header nav{
     background-color:blue;
-    width:830px;
+    width:80%;
     float:left;
     /* width가 830인이유? : wrap의 (width가 960-130=830) */
 }
@@ -36,10 +36,12 @@
 /* block : 옆에 안붙음 */
 
 .wrap header nav ul{
-    text-align:center;
+    text-align:right;
 }
 .wrap header nav ul li{
     display:inline-block;
+    width:15%;
+    margin-right:3%;
 }
 /* 부모공간내에서 inline-block으로 변환시켜주고 가운데정렬 해주면 됨 */
 .wrap header nav ul li a{
