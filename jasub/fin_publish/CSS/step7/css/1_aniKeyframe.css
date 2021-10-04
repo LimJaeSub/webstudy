@@ -1,0 +1,73 @@
+body,h1{
+    margin:0;
+}
+body{
+    position:relative;
+}
+.circle{
+    position:absolute;
+    width:200px;
+    height:200px;
+    border-radius:100px;
+    background:linear-gradient(#60b67c 0%, #77435c 100%);
+    text-align:center;
+
+
+    /* animation */
+    animation-name:JSmoveCircle;
+    /* 밑에 선언한 것 사용 */
+
+
+    animation-duration:2s;
+    /* 지속시간 */
+    animation-timing-function:ease-in-out;
+    /* 가속도 */
+    animation-iteration-count:infinite;
+    /* 무한반복 */
+    animation-direction:alternate;
+    /* 방향설정 */
+}
+
+
+/* 
+    ? animation
+    * 1. moveCircle이라는 이름의 keyframes를 호출.
+    * 2. duration으로 재생시간을 설정.
+    * 3. timing-function 으로 가속도 설정.
+    * 4. iteration-count 로 무반한복 설정.
+    ! 반복횟수를 숫자로 입력해도 가능.
+    * 5. direction으로 재생 방향 설정.
+    todo normal 표준재생(0-100%)
+    todo reverse 반대로재생(100%-0)
+    todo alternate 반복재생 (0-100%,100%-0)
+    todo alternate-reverse alternate역방향반복재생
+*/
+
+
+/* 함수선언이랑 비슷함 */
+/* @keyframes framename */
+@keyframes JSmoveCircle{
+    from{
+        /* 시작부분 */
+        left:0;
+        transform:rotate(0deg);
+    }
+    /* 50%{
+        left:250px;
+    } */
+    to{
+        /* 끝나는 부분 */
+        left:500px;
+        transform:rotate(360deg);
+    }
+}
+
+.circle:hover{
+    animation-play-state:paused;
+}
+
+
+.circle h1{
+    line-height:200px;
+    color:midnightblue;
+}

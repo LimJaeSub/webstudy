@@ -1,0 +1,37 @@
+body{
+    width:200px;
+    margin:200px auto;
+}
+div{
+    width:200px;
+    position:relative;
+
+    /*키프레임 이름 */
+    animation-name:rotate3D;
+
+    /* 해당 애니메이션 속성 */
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes rotate3D{
+    from{
+        transform:rotate3d(0,0,0,0deg);
+    }
+    to{
+        transform:rotate3d(1,1,1,360deg);
+    }
+}
+
+div span{
+    width:200px;
+    height:100px;
+    opacity: 0.5;
+    position:absolute;
+    left:0;
+    top:0;
+}
+div span:nth-of-type(1){background-color:cadetblue;}
+div span:nth-of-type(1){background-color:rgb(1, 44, 46);}
+div span:nth-of-type(1){background-color:rgb(152, 240, 10);}
