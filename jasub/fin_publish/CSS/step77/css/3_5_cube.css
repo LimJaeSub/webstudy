@@ -1,0 +1,20 @@
+body{
+    width: 200px; margin: 200px auto;
+}
+div{
+    width: 200px; position: relative;
+    animation-name:playBox;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    transform-style: preserve-3d; /* default : flat*/
+}
+
+@keyframes playBox{
+    from{
+        transform:rotate3d(0,0,0,0deg);
+    }
+    to{
+        transform:rotate3d(1,1,01,0deg);
+    }
+}
