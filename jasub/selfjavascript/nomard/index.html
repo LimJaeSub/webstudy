@@ -5,8 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+    <div class="header">
+        <h1>FaceBook</h1>
+    </div>
+    <div class="content">
+        <form id="todoform">
+            <div>
+                <label for="todoinput">할일</label>
+                <input type="text" id="todoinput" value="">
+            </div>
+            <button class="submit">save</button>
+        </form>
+        <p id="notice">안내메시지</p>
+        <ul id="todolist">
+            <!-- <li class="item">1.할일</li>
+            <li class="item">2.할일</li>
+            <li class="item">3.할일</li>
+            <li class="item">4.할일</li> -->
+        </ul>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
