@@ -1,7 +1,7 @@
 
 
 
-/* ============================================================= */
+/* =========================base settings================================ */
 .flexContainer{
     margin:10px;
     padding:15px;
@@ -18,12 +18,16 @@
     border-radius:25px;
     background-color:black;
 }
+/* =========================base settings================================ */
 
+
+
+/* =========================direction================================ */
 .flexContainer.direction{
     flex-direction:column-reverse;
 }
 
-/* ============================================================= */
+
 
 /* 
     row(left to right)
@@ -33,9 +37,13 @@
     부모요소가 flex되면 자식요소는 모두 flexitem이 된다.
 */
 
+/* =========================direction================================ */
 
+
+
+/* =========================wrap================================ */
 .flexContainer.wrap{
-    flex-wrap:wrap;
+    flex-wrap:wrap-reverse;
     /* default값 : nowrap */
     /* 
         max-width같은 느낌
@@ -52,7 +60,12 @@
 .flexContainer.wrap .flexitem{
     width:500px;
 }
-/* ============================================================= */
+/* =========================wrap================================ */
+
+
+
+
+/* =========================flow================================ */
 
 .flexContainer.flow{
     flex-flow:column-reverse wrap;
@@ -64,37 +77,44 @@
 .flexContainer.wrap .flexitem{
     width:500px;
 }
+/* =========================flow================================ */
 
-/* ============================================================= */
+
+
+/* ======================justifyContent==============================   */
 
 .flexContainer.justifyContent{
-    justify-content:space-evenly;
+    justify-content:space-around;
+    background-color:green;
     /* 
-        space-start,end,center
-        space-between
-        space-around
-        space-evenly
+        flex-start,end
+        center
+        space-between,around,evenly
     */
 }
 
+/* ======================justifyContent==============================   */
 
-/* ============================================================= */
+/* =========================alignContent==================================== */
 
 .flexContainer.alignContent{
     height:400px;
+    background-color:coral;
     flex-wrap:wrap;
-    justify-content:flex-start;
-    align-content:space-between;
+    justify-content:space-between;
+    align-content:space-around;
     /* 
-        space-start,end,center
-        space-between
-        space-around
-        space-evenly
+        flex-start,end
+        center
+        space-between,around,evenly
     */
 }
 
 
-/* ============================================================= */
+/* =========================alignContent==================================== */
+
+
+
 
 
 /* !items */
@@ -103,9 +123,12 @@
     background-color:yellow;
     display:grid;
     width:300px;
-    justify-items:stretch;
+    justify-items:center;
     /* 
-        stretch
+        stretch(default)
+        start
+        center
+        end
     */
 }
 .flexContainer.justifyitems:hover{
