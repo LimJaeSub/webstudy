@@ -1,0 +1,82 @@
+
+/* tabelet device */
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:landscape){
+    body{
+        background-color:coral;
+        color:white;
+    }
+    h1{
+        font-size:25px; 
+        text-align:right;
+        line-height:35px;
+        margin-bottom:50px;
+    }
+    p{
+        font-size:10px;
+        line-height:18px;
+    }
+}
+@media screen and (min-width:768px) and (max-width:1279px) and (orientation:portrait){
+    body{
+        background-color:green;
+        color:white;
+    }
+    h1{
+        font-size:25px; 
+        text-align:right;
+        line-height:35px;
+        margin-bottom:50px;
+    }
+    p{
+        font-size:10px;
+        line-height:18px;
+    }
+}
+@media screen and (min-width:1280px){
+    body{
+        background-color:blue;
+        color:white;
+        font-weight:bold;
+    }
+    h1{
+        font-size:20px;
+        line-height:30px;
+    }
+    p{
+        font-size:16px;
+        line-height:21px;
+        text-align: right;
+    }
+}
+
+/* todo moblie device (해상도가 768미만일때 이 코드 실행) */
+@media screen and (max-width:767px) and (orientation:portrait){
+    body{
+        background-color:cyan;
+    }
+    p{
+        font-size:25px; 
+        text-align:left;
+        line-height:35px;
+        margin-bottom:50px;
+    }
+    h1{
+        font-size:20px;
+        line-height:30px;
+    }
+}
+@media screen and (max-width:767px) and (orientation:landscape){
+    body{
+        background-color:salmon;
+    }
+    p{
+        font-size:25px; 
+        text-align:left;
+        line-height:35px;
+        margin-bottom:50px;
+    }
+    h1{
+        font-size:20px;
+        line-height:30px;
+    }
+}

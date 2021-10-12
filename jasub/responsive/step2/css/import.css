@@ -1,0 +1,6 @@
+@import url('reset.css');
+@import url('global.css');
+/* 
+    1.global에는 공통적인 요소
+    2.page에는 개별적인 요소
+*/

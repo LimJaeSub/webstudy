@@ -1,0 +1,18 @@
+/* 장치적 반응형
+    1.접근장치(pc,mobile)에 따른 반응성    
+    2.환경에 따른 제약이 있다.
+    3.난이도가 높다
+    4.장치에 따른 stylesheet 분기파일이 존재
+*/
+
+
+/* 화면적 반응형
+    1.화면크기에 따른 반응성
+    2.환경에 따른 제약이 적다.
+    3.난이도가 크게 어렵지 않다
+    4.화면에 따른 mediaquery분기 존재
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;800&family=Nanum+Myeongjo:wght@800&display=swap');
+@import url('pc.css') screen;
+@import url('print.css') print;
