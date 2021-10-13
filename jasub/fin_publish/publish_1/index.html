@@ -5,14 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="css/import.css">
 </head>
 <body>
-    <header>
+    <header id="home">
         <div>
             <!-- 헤더 안에 컨텐츠를 넣을 div 태그 -->
             <!-- LOGO -->
             <h1>
-                <a href="/">
+                <a href="#home">
                     <img src="../publish_1/psd/images/logo.png" alt="tajam">
                 </a>
                 <!-- 최상위 루트(index)로 돌아감 -->
@@ -22,25 +23,25 @@
             <nav>
                 <ul>
                     <li>
-                        <a href="">HOME</a>
+                        <a href="#home" class="active">HOME</a>
                     </li>
                     <li>
-                        <a href="">ABOUT</a>
+                        <a href="#about">ABOUT</a>
                     </li>
                     <li>
-                        <a href="">EXPRETISE</a>
+                        <a href="#expertise">EXPRETISE</a>
                     </li>
                     <li>
-                        <a href="">TEAMS</a>
+                        <a href="#teams">TEAMS</a>
                     </li>
                     <li>
-                        <a href="">WORKS</a>
+                        <a href="#works">WORKS</a>
                     </li>
                     <li>
-                        <a href="">TEAMS</a>
+                        <a href="#teams">TEAMS</a>
                     </li>
                     <li>
-                        <a href="">CONTACT</a>
+                        <a href="#contact">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -49,13 +50,13 @@
                 <li>
                     <h2>We Are Awesome Creative Agency</h2>
                     <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.</p>
-                    <a href="">LEARN MORE</a>
+                    <a href="" class="btn_more">LEARN MORE</a>
                     <!-- learn more는 누르면 다른 페이지로 넘어가는 호출의기능이기 때문에 a가 적격 -->
                 </li>
             </ul>
             <ol>
                 <li>
-                    <a href="">th slide</a>
+                    <a href="" class="active">th slide</a>
                 </li>
                 <li>
                     <a href="">th slide</a>
@@ -69,22 +70,23 @@
             </ol>
         </div>
     </header>
+    <!-- header fin -->
     <!-- 헤더는 위쪽 배경 전체를 담당 -->
     <!-- div는 로고~배너를 포함하는 창(일정 크기를 넘어가면 안됨) -->
-    <figure>
+    <figure id="about">
         <img src="../publish_1/psd/images/ci.png" alt="tajam CI">
         <figcaption>
             <h2>OUR STORY</h2>
             <p>This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus</p>
             <p>Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-            <a href="">LEARN MORE</a>
+            <a href="" class="btn_more">LEARN MORE</a>
         </figcaption>
     </figure>
-    <section>
+    <section class="videoArea">
         <a href="">▷</a>
         <h2>WATCH OUR STORY</h2>
     </section>
-    <section>
+    <section id="expertise" class="expArea">
         <h2>EXPERTISE</h2>
         <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         <hr>
@@ -118,7 +120,7 @@
             </li>
         </ul>
     </section>
-    <section>
+    <section id="teams" class="teamArea">
         <h2>MEET OUR AMAZING TEAM</h2>
         <p>Lorem ipsum dolor sit amet proin gravida nibh vel velit</p>
         <hr>
@@ -165,9 +167,9 @@
             </li>
         </ul>
         <p>Become part of our dream team, let’s join us ! </p>
-        <a href="">WE ARE HIRING</a>
+        <a href="" class="btn_more">WE ARE HIRING</a>
     </section>
-    <section>
+    <section id="works" class="worksArea">
         <h2>
             OUR WORKS
             <a href="">See All Project in dribbble &gt;</a>
@@ -186,9 +188,9 @@
             <li><img src="https://via.placeholder.com/270x200" alt="undefined"></li>
             <li><img src="https://via.placeholder.com/270x200" alt="undefined"></li>
         </ul>
-        <a href="">LODE MORE</a>
+        <a href="" class="btn_more">LODE MORE</a>
     </section>
-    <section>
+    <section id="peopleSay" class="talkArea">
         <h2>talk's Section</h2>
         <p>
             This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit.
@@ -204,7 +206,7 @@
                 <li><a href="">
                     <img src="../publish_1/psd/images/ex_01.png" alt="">
                 </a></li>
-                <li><a href="">
+                <li class="active"><a href="">
                     <img src="../publish_1/psd/images/ex_01.png" alt="">
                 </a></li>
                 <li><a href="">
@@ -216,7 +218,7 @@
             </ul>
         </div>
     </section>
-     <section>
+     <section id="contact" class="contactArea">
          <h2>contact Us</h2>
          <form>
             <fieldset>
@@ -225,7 +227,7 @@
                 <input type="text" placeholder="Email" title="userEmail">
                 <input type="text" placeholder="Subject" title="postSubject">
                 <textarea placeholder="Your Message" title="insert your message"></textarea>
-                <input type="submit" value="SUBMIT">
+                <input type="submit" value="SUBMIT" class="btn_more">
             </fieldset>
          </form>
          <div>

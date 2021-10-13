@@ -1,23 +1,21 @@
-const title = document.querySelector(".hello:first-child h1")
-const title2 = document.querySelectorAll(".hello")
+const title = document.querySelector(".hello h1");
 
-function handleTitleClick(){
-    alert("hello");
+function titleClick(){
+    if(title.style.color == "blue")
+    {
+        title.style.color = "tomato";
+    }
+    else if(title.style.color == "tomato")
+    {
+        title.style.color="blue";
+    }
+    else{
+        title.style.color="blue";
+    }
 }
-function mouseenterfun(){
-    alert("mouse is here!");
-}
-
-for(var a=0;a<3;a++)
-{
-    console.log(title2[a]);
-}
 
 
-// title2.addEventListener("click",handleTitleClick)
-
-
-function handleWindowResize{
-    document.body.style.backgroundColor="tomato";
-}
-window.addEventListener("resize",handleWindowResize)
+title.addEventListener("click",titleClick);
+// 1. element를 찾아라
+// 2. event를 listen
+// 3. event를 반응
