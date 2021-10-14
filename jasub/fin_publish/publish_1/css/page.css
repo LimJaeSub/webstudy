@@ -1,0 +1,106 @@
+@media screen and (min-width:1280px){
+    #about{
+        padding-left:3.5%;
+    }
+    #about:after{
+        content: ''; 
+        display: block; 
+        clear: both; 
+        visibility: hidden;
+    }
+    #about img{
+        float:left;
+        max-width:235px;
+        width:25%;
+    }
+    #about>figcaption{
+        width:60%;
+        float:left;
+        margin-left:10%;
+    }
+    #about>figcaption>*:not(a){
+        margin-bottom:30px;
+    }
+    #about>figcaption>h2{
+        font-size:22px;
+        font-weight:300;
+    }
+    #about>figcaption>a{
+        max-width:120px;
+    }
+
+    .videoArea{
+        background:url("../psd/images/bg_03.png") left top / cover repeat;
+        padding:202px 0;
+        text-align:center;
+    }
+    .videoArea a{
+        display:block;
+        color:white;
+        margin-bottom:32px;
+    }
+    .videoArea h2{
+        color:white;
+        
+    }
+
+    #expertise{
+        text-align:center;
+    }
+    #expertise h2{
+        margin-bottom:19px;
+    }
+    #expertise p{
+        font-size:13px;
+        padding-bottom:22px;
+    }
+    #expertise hr{
+        width:50px;
+        margin:0 auto;
+        height:2px;
+        padding-bottom: 48px;
+    }
+    #expertise ul{
+        margin:0 0 64px;
+    }
+    #expertise ul:after{
+        content:'';
+        display:block;
+        clear:both;
+        visibility:hidden;
+    }
+    #expertise ul li{
+        display:block;
+        float:left;
+        width:30.33%;
+        padding-right:1.5%;
+        padding-left:1.5%;
+        /* 이부분 질문 */
+    }
+    #expertise ul li:nth-child(1),
+    #expertise ul li:nth-child(2){
+        border-style:solid;
+        border-color:black;
+        border-width:0 1px 1px 0;
+        box-sizing:border-box;
+    }
+    #expertise ul li:nth-child(3){
+        border-style:solid;
+        border-color:black;
+        border-width:0 0 1px;
+    }
+    #expertise ul li:nth-child(4),
+    #expertise ul li:nth-child(5){
+        border-style:solid;
+        border-color:black;
+        border-width:0 1px 0 0;
+        box-sizing:border-box;
+    }
+    #expertise ul li h3{
+        padding-bottom:26px;
+    }
+
+
+
+}
+/* desktop */
