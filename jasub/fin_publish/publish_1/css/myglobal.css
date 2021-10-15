@@ -2,41 +2,20 @@
 /* 화면 상관없이 항상 유지 */
 header>div nav ul li a,
 header>div>ul li p,
-.videoArea h2,
-.expArea ul,
-section.teamArea ul li figure figcaption dl,
-section.teamArea ul+p,
-section.worksArea h2 a{
+.videoArea h2{
     font-family:'Roboto';
 }
-
-
-header>div>ul li h2,
-.expArea>*:not(ul),
-section.teamArea h2,
-section.teamArea>p:not(:last-of-type),
-section.worksArea h2{
-    font-family:'Playfair Display';
+header>div>ul li h2{
+    font-family:'PlayfairDisplay'
 }
-
-
 a{
     text-decoration:none;
 }
-
-
 .btn_more{
     font-family:'Hammersmith One';
     font-weight:400;
 }
 
-
-section[class $= Area]>hr{
-    min-width:50px;
-    width:3%;
-    border-top:2px solid rgba(65,61,75,0.35);
-    margin:0 auto 45px;
-}
 
 
 /* desktop */
