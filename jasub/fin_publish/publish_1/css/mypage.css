@@ -43,61 +43,286 @@
         font-size: 16px; font-weight: 900; color: white; text-align: center;
     }
 
-    #expertise{
+    section.expArea{
         text-align:center;
     }
-    #expertise h2{
-        margin-bottom:19px;
+    section.expArea h2{
+        font-size: 22px;
+        font-weight: 700;
+        color:#413d4b;
+        margin-bottom:10px;
     }
-    #expertise p{
-        font-size:13px;
-        padding-bottom:22px;
+    section.expArea p{
+        font-size:14px;
+        font-weight: 400;
+        color:RGBA(47,45,53,0.75);
+        margin-bottom:15px;
     }
-    #expertise hr{
-        width:50px;
-        margin:0 auto;
-        height:2px;
-        padding-bottom: 48px;
-    }
-    #expertise ul{
-        margin:0 0 64px;
-    }
-    #expertise ul:after{
+    section.expArea ul:after{
         content:'';
         display:block;
         clear:both;
         visibility:hidden;
     }
-    #expertise ul li{
+    section.expArea ul li{
         display:block;
+        width:33.33%;
         float:left;
-        width:30.33%;
-        padding-right:1.5%;
-        padding-left:1.5%;
-        /* 이부분 질문 */
-    }
-    #expertise ul li:nth-child(1),
-    #expertise ul li:nth-child(2){
-        border-style:solid;
-        border-color:black;
-        border-width:0 1px 1px 0;
+        padding:120px 3.5% 40px;
         box-sizing:border-box;
+        background-repeat:no-repeat;
+        background-position:center 30px;
     }
-    #expertise ul li:nth-child(3){
-        border-style:solid;
-        border-color:black;
-        border-width:0 0 1px;
+    section.expArea ul li:nth-child(1){background-image:url("../psd/images/ico_01.png");}    
+    section.expArea ul li:nth-child(2){background-image:url("../psd/images/ico_02.png");}
+    section.expArea ul li:nth-child(3){background-image:url("../psd/images/ico_03.png");}
+    section.expArea ul li:nth-child(4){background-image:url("../psd/images/ico_04.png");}
+    section.expArea ul li:nth-child(5){background-image:url("../psd/images/ico_05.png");}
+    section.expArea ul li:nth-child(6){background-image:url("../psd/images/ico_06.png");}
+
+    section.expArea ul li h3{
+        font-weight:900;
+        font-size:14px;
+        color:#413d4b;
+        margin-bottom:20px;
     }
-    #expertise ul li:nth-child(4),
-    #expertise ul li:nth-child(5){
-        border-style:solid;
-        border-color:black;
+    
+    section.expArea ul li{
+        border-color:rgba(121, 49, 49, 0.2);
+    }
+    section.expArea ul li:nth-child(1),
+    section.expArea ul li:nth-child(2){
+        border-style:solid;        
         border-width:0 1px 0 0;
         box-sizing:border-box;
     }
-    #expertise ul li h3{
-        padding-bottom:26px;
+
+    section.expArea ul li:nth-child(3n-2):not(:nth-child(1)){
+        border-style:solid;
+        border-width:1px 1px 0 0;
+        box-sizing:border-box;
     }
+    section.expArea ul li:nth-child(3n-1):not(:nth-child(2)){
+        border-style:solid;
+        border-width:1px 1px 0 0;
+        box-sizing:border-box;
+    }
+    section.expArea ul li:nth-child(3n):not(:nth-child(3)){
+        border-style:solid;
+        border-width:1px 0 0 0;
+        box-sizing:border-box;
+    }
+    /* 아이콘들은 jsp로 queryselector이용해 추가 */
+
+    section.teamArea{
+        background:url("../psd/images/bg_05.png") left top / cover no-repeat;
+        color:white;
+        padding:70px 0;
+        text-align:center;
+    }
+    section.teamArea h2{
+        font-size:22px;
+        font-weight:700;
+        margin-bottom:10px;
+    }
+    section.teamArea>p{
+        font-size:14px;
+    }
+    section.teamArea>p:first-of-type{
+        margin-bottom:15px;
+    }
+    section.teamArea >hr{
+        border-color:rgba(255,255,255,0.2);
+    }
+    section.teamArea ul{
+        max-width:940px;
+        margin:0 auto 70px;
+    }
+    section.teamArea ul:after{
+        content:'';
+        display:block;
+        visibility:hidden;
+        clear:both;
+    }
+    section.teamArea ul li{
+        width:23.5%;
+        float:left;
+        display:block;
+        
+    }
+    section.teamArea ul li:not(:first-child){
+        margin-left:2%;
+    }
+    section.teamArea ul li figure{
+        background:url("https://via.placeholder.com/220x230") center top / contain no-repeat;
+        padding-top:230px;
+    }
+    section.teamArea ul li figure figcaption{
+        border:1px solid rgba(255,255,255,0.5);
+        padding:20px 0;
+    }
+    section.teamArea ul li figure figcaption dl dt{
+        font-size:14px;
+        font-weight:900;
+        margin-bottom:10px;
+    }
+    section.teamArea ul li figure figcaption dl dd{
+        font-size:13px;
+        font-weight:200;
+        color:rgba(255,255,255,0.5);
+    }
+    section.teamArea ul+p{
+        margin-bottom:25px;
+        font-weight:300;
+    }
+    section.teamArea a.btn_more{
+        max-width:140px;
+        margin:0 auto;
+    }
+    
+    /* teamArea fin */
+    section.worksArea{
+        padding:70px 0;
+    }
+    section.worksArea h2{
+        font-size:22px;
+        font-weight:700;
+        color:#413d4b;
+        max-width:940px;
+        margin:0 auto 70px;
+        position:relative;
+    }
+    section.worksArea h2 a{
+        position:absolute;
+        right:0;
+        color:#413d4b;
+        top:10px;
+        font-size:14px;
+        font-weight:300;
+    }
+    section.worksArea ul{
+        margin-bottom:70px;
+    }
+    section.worksArea ul:after{
+        content:'';
+        display:block;
+        clear:both;
+        visibility:hidden;
+    }
+    section.worksArea ul li{
+        float:left;
+        display:block;
+        width:16.66%;
+        line-height:0;  
+    }
+    section.worksArea ul li img{
+        width:100%;
+    }
+    section.worksArea a.btn_more{
+        margin:0 auto;
+        max-width:140px;
+    }
+
+    section.talkArea{
+        background:url("../psd/images/bg_08.png") left top / cover no-repeat;
+        color:white;
+        padding:70px 0px;
+        text-align:center;
+    }
+    section.talkArea>h2{
+        text-indent:-9999px;
+        padding-bottom:26px;
+        background:url("../psd/images/quote.png") no-repeat center bottom;
+    }
+    section.talkArea>p{
+        margin:42px auto 0;
+        font-size:16px;
+        font-weight:300;
+        line-height:30px;
+        max-width:780px;
+    }
+    /* 데이터 상 클릭하면 strong하고 span 부분이 바뀌는게 맞는데
+        왜 strong하고 span을 썻나? 다른 div로 대체했으면 안됬나
+        질문하기
+    */
+    section.talkArea>div{
+        width:500px;
+        margin:0 auto;
+    }
+    section.talkArea>div ul{
+        width:100%;
+    }
+    section.talkArea>div ul:after{
+        content: ''; 
+        display: block; 
+        clear: both; 
+        visibility: hidden;
+    }
+    section.talkArea>div ul li{
+        display:block;
+        float:left;
+        width:20%;
+    }
+    section.talkArea>div ul li a{
+        display:block;
+        width:100%;
+    }
+    section.talkArea>div ul li a:not(li.active){
+        width:60%;
+    }
+
+
+
+
+
+
+    section.contactArea{
+        margin:71px auto 0;
+        
+    }
+    section.contactArea h2{
+        text-indent:-9999px;
+    }
+    section.contactArea form{
+        float:left;
+        width:50%;
+    }
+    section.contactArea>form fieldset legend{
+        font-size:22px;
+        padding-bottom:47px;
+    }
+    section.contactArea>form fieldset input[type="text"]{
+        display:block;
+        margin-bottom:20px;
+        width:80%;
+    }
+    section.contactArea>div{
+        float:right;
+        width:50%;
+    }
+    section.contactArea>div ul{
+        width:100%;
+    }
+    section.contactArea>div h3{
+        padding-bottom:47px;
+        font-size:22px;
+    }
+    section.contactArea>div ul li{
+        float:left;
+        display:block;
+        width:50%;
+        margin:0;
+        padding:0;
+    }
+    section.contactArea:after{
+        content:'';
+        display:block;
+        clear:both;
+        visibility:hidden;
+    }
+
+
+
 
 
 

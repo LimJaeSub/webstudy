@@ -15,7 +15,8 @@ header>div>ul li h2,
 .expArea>*:not(ul),
 section.teamArea h2,
 section.teamArea>p:not(:last-of-type),
-section.worksArea h2{
+section.worksArea h2,
+section.contactArea>form fieldset legend{
     font-family:'Playfair Display';
 }
 
@@ -45,12 +46,13 @@ section[class $= Area]>hr{
     /* 모든 구간 기본 베이스 */
     #about,
     #expertise,
-    footer>div{
+    footer>div,
+    section.contactArea{
         max-width:940px;
         margin:0 auto;
         padding:70px 0;
     }
-    /* 기본 베이스 */
+    /* 배경 이미지가 들어가지 않는 곳의 기본 베이스 */
 
 
 
