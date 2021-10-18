@@ -1,0 +1,16 @@
+body{
+    background-color:beige;
+}
+
+h1{
+    color:cornflowerblue;
+    transition-duration:0.5s;
+}
+
+.active{
+    color:tomato;
+}
+
+.goodfont{
+    font-family: 'Courier New', Courier, monospace;
+}
