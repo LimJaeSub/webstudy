@@ -241,8 +241,10 @@
         line-height:30px;
         max-width:780px;
     }
-    /* 데이터 상 클릭하면 strong하고 span 부분이 바뀌는게 맞는데
-        왜 strong하고 span을 썻나? 다른 div로 대체했으면 안됬나
+    /* 
+        데이터 상 클릭하면 strong하고 span 부분이 바뀌는게 맞는데
+        왜 strong하고 span을 쓴 것인지?
+        div로 하는거 x?
         질문하기
     */
     section.talkArea>div{
@@ -267,52 +269,87 @@
         display:block;
         width:100%;
     }
-    section.talkArea>div ul li a:not(li.active){
+    section.talkArea div ul li:not(.active) a{
         width:60%;
     }
+    section.contactArea>form fieldset textarea{
+        margin-bottom:20px;
+        width:80%;
+        height:200px;
+    }
+    section.contactArea>form fieldset input[type="submit"]{
+        background-color:white;
+        width:25%;
+    }
 
 
 
 
-
-
+    /* contactArea */
     section.contactArea{
-        margin:71px auto 0;
-        
+        margin: 72px auto;
+        padding:0;
     }
     section.contactArea h2{
-        text-indent:-9999px;
+        display:none;
     }
+
+    /* 왼쪽 부분 */
     section.contactArea form{
         float:left;
         width:50%;
     }
     section.contactArea>form fieldset legend{
         font-size:22px;
-        padding-bottom:47px;
+        padding-bottom:35px;
+        font-weight:700;
     }
+
+    /* 입력구간들 */
     section.contactArea>form fieldset input[type="text"]{
         display:block;
         margin-bottom:20px;
+        height:40px;
         width:80%;
     }
+    section.contactArea>form fieldset textarea{
+        margin-bottom:20px;
+        width:80%;
+        height:200px;
+    }
+    section.contactArea>form fieldset input[type="submit"]{
+        background-color:white;
+        width:25%;
+    }
+
+
+
+
+    /* 오른쪽 부분 */
     section.contactArea>div{
         float:right;
         width:50%;
+        height:40px;
     }
     section.contactArea>div ul{
         width:100%;
     }
     section.contactArea>div h3{
-        padding-bottom:47px;
+        padding-bottom:35px;
         font-size:22px;
     }
     section.contactArea>div ul li{
         float:left;
         display:block;
-        width:50%;
+        width:40%;
         margin:0;
         padding:0;
+    }
+    section.contactArea>div ul li a{
+        display:block;
+    }
+    section.contactArea>div ul li a img{
+        width:80%;
     }
     section.contactArea:after{
         content:'';
