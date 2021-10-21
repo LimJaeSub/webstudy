@@ -6,49 +6,94 @@
     --color-yellow: #fbbe28;
     --color-pink: #fd7f84;
     --color-light-grey: #dfdfdf;
-  }
   
-  * {
-    box-sizing: border-box;
-  }
-  html,body{
-      margin:0;
-      padding:0;
-  }
-  body{
-    background-color:#3f454d;
-  }
-@media screen and (min-width:1280px){
-
-    header>div.logo{
-      max-width:940px;  
-      margin:0 auto;
-      text-align:center;
-    }
-    header>div.logo h1{
-        display:none;
-    }
-    header .navArea{
-        display:block;
-        max-width:940px;
-        margin:0 auto;
-    }
-    header .navArea ul{
-        display:flex;
-        justify-content: space-around;
-        list-style:none;
-    }
-    header .navArea ul li{
-        width:10%;
-    }
-    header .navArea ul li.btn_li img{
-        width:100%;
-    }
-
-    header .navArea ul li.border_li{
-        border-style:solid;
-        border-radius:10px;
-    }
 }
+
+body{
+    background-color:#3f454d;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+}
+
+.logoArea .logo{
+    cursor: pointer;
+    transition:0.5s ease-in-out;   
+}
+
+.logoArea .logo:hover,
+.btnArea .btn:hover{
+    transform:scale(1.1);
+}
+.btnArea .btn.colorbtn:hover{
+    border:solid 3px black;
+}
+
+.btnArea{
+    display:flex;
+    justify-content:space-between;   
+}
+
+.btnArea .btn{
+    background-color:transparent;
+    border:none;
+    cursor:pointer;
+    transition:0.5s ease-in-out;
+}
+
+.btnArea .btn.imgbtn{
+    width:60px;
+    height:60px;
+}
+.btnArea .btn.imgbtn img{
+    width:100%;
+    height:100%;
+}
+.btnArea .btn.colorbtn{
+    font-size:15px;
+    width:60px;
+    height:30px;
+    margin-top:15px;
+    border-radius:30px;
+}
+.btnArea .btn.colorbtn:not(:last-child){
+    margin-right:7px;
+}
+.btnArea .btn.colorbtn.blue{
+    background-color:blue;
+}
+.btnArea .btn.colorbtn.yellow{
+    background-color:yellow;
+}
+.btnArea .btn.colorbtn.pink{
+    background-color:pink;
+}
+
+
+
+.itemArea{
+    width:60%;
+    height:60%;
+}
+.items{
+    list-style:none;
+    padding-left:0;
+}
+.items .item{
+    background-color:white;
+    border:solid 3px black;
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    margin-bottom:10px;
+}
+.item .item_thumnail{
+    width:55px;
+    height:50%;
+    margin:5px 10px;
+}
+
+
   
 
