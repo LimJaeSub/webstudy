@@ -87,6 +87,11 @@ body{
     display:flex;
     align-items:center;
     margin-bottom:10px;
+    transition:1s ease-in-out;
+}
+.items .item:hover{
+    transform:scale(1.1);
+    background-color:greenyellow;
 }
 .item .item_thumnail{
     width:55px;

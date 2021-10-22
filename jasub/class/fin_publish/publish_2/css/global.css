@@ -11,12 +11,37 @@ input[type='checkbox'],
 input[type='radio']{
     display:none;
 }
+a{
+    text-decoration: none;
+}
+.selectBox{
+    display:inline-block;
+    padding-right:20px;
+    box-sizing: border-box;
+    background:url("../images/bg_arrow.png") no-repeat right center;
+    /* selectbox는 앞에 무언가를 둔다. */
+}
+.selectBox select{
+    border:none;
+    box-shadow:none;
+    background-image:none;
+    background-color:transparent;
+
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    /* 원래 형태 삭제 */
+    
+    padding:10px 0;
+    font-size:11px;
+    color:#343e5c;
+}
 /* ?All Use */
 
 @media screen and (min-width: 1280px){
     header > div,
     footer > div,
-    header+nav .sliderNav{
+    header+nav .sliderNav,
+    .contentArea{
         max-width: 1170px; margin: 0 auto;
     }
     header{
@@ -59,6 +84,10 @@ input[type='radio']{
         font-weight:700;
         color:#343e5c;
         line-height:90px;
+        transition:1s ease-in-out;
+    }
+    header>div nav ul li a:hover{
+        transform:scale(1.1);
     }
     header > div div{
         width:29.3%;
