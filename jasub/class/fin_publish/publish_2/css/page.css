@@ -192,7 +192,7 @@
         width:7%;
     }
     .contentArea > form fieldset input[type='search'],
-    .contetnArea > form fieldset input[id='range_minprice']{
+    .contentArea > form fieldset input[id='range_minprice']{
         margin-left:1.02%;
     }
     .contentArea > form fieldset label[for='range_minprice'],
@@ -210,6 +210,170 @@
     .contentArea > form fieldset input[type='checkbox']:checked + label[for='freeShipCheck']{
         background:url('../images/bul_check.png') no-repeat left center;
     }
+
+
+
+
+    .contentArea >aside{
+        width:23.07%;
+    }
+
+
+
+
+    .contentArea > aside nav{
+        width:100%;
+        background-color:white;
+        border:1px solid rgba(0,0,0,0.1);
+        border-radius:7px;
+        margin-bottom:30px;
+    }
+    .contentArea > aside nav ul{
+        width:100%;
+    }
+    .contentArea > aside > nav > ul li{
+        width:100%;
+        display:block;
+    }
+    .contentArea > aside > nav > ul > li{
+        border-bottom:1px solid rgba(0,0,0,0.1);
+        height:41px;
+        overflow:hidden;
+        line-height:41px;
+        transition: height 1s ease-in-out;
+    }
+    .contentArea > aside > nav > ul > li:hover{
+        height:246px;
+    }
+    .contentArea > aside > nav > ul > li a{
+        margin-left:15px;
+        font-weight:500;
+        font-size:14px;
+        color:black;
+        font-weight:500;
+    }
+    .contentArea > aside > nav > ul > li ol > li{
+        background-color:#f0f2f7;
+        border-top:1px solid rgba(0,0,0,0.1);
+        height:41px;
+        line-height:41px;
+        font-size:14px;
+    }
+    .contentArea > aside > nav > ul > li ol > li a{
+        color:#b0b6c8;
+        font-size:14px;
+    }
+
+    /* content-nav fin */
+
+    .contentArea > aside > form{
+        width:100%;
+        background-color:white;
+        border:1px solid rgba(0,0,0,0.1);
+        border-radius:7px;
+    }
+
+    .contentArea > aside > form fieldset{
+        width:100%;
+        border-bottom:1px solid rgba(0,0,0,0.1);
+    }
+    .contentArea > aside > form > fieldset legend{
+        padding:0 7% 0 8%;
+        font-weight:700;
+        height:41px;
+        line-height:41px;
+        width:85%;
+        border-bottom:1px solid rgba(0,0,0,0.1);
+        font-size:14px;
+    }
+    .contentArea > aside > form > fieldset label{
+        display:inline-block;
+        width:70%;
+        padding-left:10%;
+        margin-left:5%;
+        font-size:14px;
+        font-weight:500;
+        height:41px;
+        line-height:41px;
+    }
+    .contentArea > aside > form > fieldset span{
+        display:inline-block;
+        width:13%;
+        height:41px;
+        line-height:41px;
+        text-align:center;
+        color:#b8bfd3;
+        font-weight:500;
+        font-size:14px;
+    }
+
+
+    .contentArea > aside > form > fieldset label[for='ava_str'],
+    .contentArea > aside > form > fieldset label[for='ava_net']{
+        background:url('../images/off_radio.png') no-repeat left center;
+    }
+
+    .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='ava_str'],
+    .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='ava_net']{
+        background:url('../images/on_radio.png') no-repeat left center;
+    }
+
+
+
+    .contentArea > aside > form > fieldset legend a{
+        float:right;
+    }
+
+    .contentArea > aside > form > fieldset label[for='brand_op1'],
+    .contentArea > aside > form > fieldset label[for='brand_op2'],
+    .contentArea > aside > form > fieldset label[for='brand_op3'],
+    .contentArea > aside > form > fieldset label[for='brand_op4'],
+    .contentArea > aside > form > fieldset label[for='condition_op1'],
+    .contentArea > aside > form > fieldset label[for='condition_op2'],
+    .contentArea > aside > form > fieldset label[for='condition_op3'],
+    .contentArea > aside > form > fieldset label[for='condition_op4'],
+    .contentArea > aside > form > fieldset label[for='condition_op5']{
+        background:url('../images/off_check.png') no-repeat left center;
+    }
+
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='brand_op1'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='brand_op2'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='brand_op3'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='brand_op4'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='condition_op1'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='condition_op2'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='condition_op3'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='condition_op4'],
+    .contentArea > aside > form > fieldset input[type='checkbox']:checked + label[for='condition_op5']{
+        background:url('../images/on_check.png') no-repeat left center;
+    }
+
+    .contentArea > aside > form > fieldset:last-child label{
+        width:34%;
+    }
+
+    .contentArea > aside > form > fieldset:last-child label[for='dlvr_Free'],
+    .contentArea > aside > form > fieldset:last-child label[for='dlvr_Dollor']{
+        background:url('../images/off_radio.png') no-repeat left center;
+    }
+
+    .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='dlvr_Free'],
+    .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='dlvr_Dollor']{
+        background:url('../images/on_radio.png') no-repeat left center;
+    }
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
     
 
 
