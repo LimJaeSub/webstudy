@@ -214,13 +214,9 @@
 
 
 
-    .contentArea >aside{
+    /* .contentArea >aside{
         width:23.07%;
     }
-
-
-
-
     .contentArea > aside nav{
         width:100%;
         background-color:white;
@@ -232,8 +228,10 @@
         width:100%;
     }
     .contentArea > aside > nav > ul li{
-        width:100%;
+        width:95%;
+        margin-right:5%;
         display:block;
+        
     }
     .contentArea > aside > nav > ul > li{
         border-bottom:1px solid rgba(0,0,0,0.1);
@@ -246,11 +244,11 @@
         height:246px;
     }
     .contentArea > aside > nav > ul > li a{
+        display:block;
         margin-left:15px;
         font-weight:500;
         font-size:14px;
         color:black;
-        font-weight:500;
     }
     .contentArea > aside > nav > ul > li ol > li{
         background-color:#f0f2f7;
@@ -262,39 +260,91 @@
     .contentArea > aside > nav > ul > li ol > li a{
         color:#b0b6c8;
         font-size:14px;
+    } */
+
+
+    .contentArea aside{
+        width: 23%; float: left;
     }
+    .contentArea aside nav{
+        background-color: white; margin-bottom: 30px; border-radius: 5px;
+    }
+    .contentArea aside nav ul li,
+    .contentArea aside nav ul li a{
+        display: block;
+    }
+    .contentArea aside nav ul > li:not(:last-child){
+        border-bottom: 1px solid #f0f2f7;
+    }
+    .contentArea aside nav ul > li > a{
+        font-size: 13px; 
+        color: #343e5c; 
+        font-weight: 700;
+        padding: 15px 7.4%;
+    }
+    .contentArea aside nav ul > li >a:after{
+        content:url('../images/bg_arrow.png');
+        float:right;
+        transform: rotate(-90deg); transition: transform 0.5s ease-in-out;
+    }
+
+
+    .contentArea aside nav ul > li:hover > a:after{
+        transform:rotate(0deg);
+    }
+    .contentArea aside nav ul > li ol{
+        background-color:#f0f2f7;
+    }
+    .contentArea aside nav ul > li ol li a{
+        font-size:0px;
+        color:#a1a7bd;
+        opacity:0;
+        padding:0px 7.4%;
+        transition-duration:0.3s;
+    }
+    .contentArea aside nav ul > li:hover ol li a{
+        font-size:11px;
+        opacity:1;
+        padding:15px 7.4%;
+        border-bottom:1px solid #dfe4ee;
+    }
+
+
+
+    
 
     /* content-nav fin */
 
-    .contentArea > aside > form{
+    /* .contentArea > aside > form{
+        width:100%;
+    }
+
+    .contentArea > aside > form fieldset{
         width:100%;
         background-color:white;
         border:1px solid rgba(0,0,0,0.1);
         border-radius:7px;
     }
-
-    .contentArea > aside > form fieldset{
-        width:100%;
-        border-bottom:1px solid rgba(0,0,0,0.1);
-    }
     .contentArea > aside > form > fieldset legend{
-        padding:0 7% 0 8%;
-        font-weight:700;
+        padding:41px 9% 0 6%;
         height:41px;
         line-height:41px;
         width:85%;
         border-bottom:1px solid rgba(0,0,0,0.1);
-        font-size:14px;
+        font-size: 13px; 
+        color: #343e5c; 
+        font-weight: 700;
     }
     .contentArea > aside > form > fieldset label{
         display:inline-block;
         width:70%;
         padding-left:10%;
         margin-left:5%;
-        font-size:14px;
-        font-weight:500;
         height:41px;
         line-height:41px;
+        font-size: 13px; 
+        color: #343e5c; 
+        font-weight: 500;
     }
     .contentArea > aside > form > fieldset span{
         display:inline-block;
@@ -307,7 +357,7 @@
         font-size:14px;
     }
 
-
+    
     .contentArea > aside > form > fieldset label[for='ava_str'],
     .contentArea > aside > form > fieldset label[for='ava_net']{
         background:url('../images/off_radio.png') no-repeat left center;
@@ -322,6 +372,8 @@
 
     .contentArea > aside > form > fieldset legend a{
         float:right;
+        color:blue;
+        text-decoration:underline;
     }
 
     .contentArea > aside > form > fieldset label[for='brand_op1'],
@@ -360,7 +412,100 @@
     .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='dlvr_Free'],
     .contentArea > aside > form > fieldset input[type='radio']:checked + label[for='dlvr_Dollor']{
         background:url('../images/on_radio.png') no-repeat left center;
+    } */
+
+
+    .contentArea aside fieldset{
+        background-color:white;
+        border-radius-5px;
+        padding-top:30px;
     }
+    .contentArea aside fieldset legend{
+        position:relative;
+        top:30px;
+        font-size:11px;
+        color:#343e5c;
+        border-bottom:1px solid #f0f2f7;
+        width:100%; 
+        padding:0 7.4% 15px;
+        box-sizing: border-box;
+    }
+    .contentArea aside fieldset legend a{
+        color:#2754eb;
+        border-bottom:2px solid #c9d4fa;
+        float:right;
+    }
+    .contentArea aside fieldset label{
+        font-size:13px;
+        color:#343e5c;
+        display:inline-block;
+        box-sizing: border-box;
+        padding-left:20.37%;
+    }
+    .contentArea aside fieldset span{
+        font-size:11px;
+        color:#bdbfd3;
+        display:inline-block;
+        text-align:center;
+        width:15%;
+        max-width:75px;
+    }
+    .contentArea aside fieldset label[for*='ava'],
+    .contentArea aside fieldset label[for*='brand']{
+        width:83%;
+        max-width:205px;
+    }
+    .contentArea aside fieldset label[for*='Condition']{
+        width:93%;
+        max-width:270px;
+    }
+    .contentArea aside fieldset label[for*='dlvr']{
+        width:49%;
+        max-width:135px;
+        float:left;
+    }
+
+
+
+
+
+
+
+    /* ========================================================= */
+    .contentArea section{
+        width:70%; float: left;
+        margin-left:7%;
+    }
+    .contentArea section h3{
+        display:none;
+    }
+    .contentArea section ul{
+        width:100%;
+    }
+    .contentArea section ul li{
+        display:inline-block;
+    }
+    .contentArea section ul li:not(:nth-child(5)){
+        /* 긴거제외한 나머지 */
+        width:30%;
+    }
+    .contentArea section ul li:nth-child(5){
+        width:65%;
+    }
+    .contentArea section ul li figure{
+        width:100%;
+    }
+    .contentArea section ul li figure img{
+        width:100%;
+    }
+
+
+
+
+
+    
+
+
 
     
     

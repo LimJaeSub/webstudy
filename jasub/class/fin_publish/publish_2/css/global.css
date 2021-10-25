@@ -129,7 +129,7 @@ a{
     .paging{
         position:relative;
         background-color:white;
-        border-radius:4px;
+        border-radius:4px; clear: both;
     }
     .paging>a{
         position:absolute;
