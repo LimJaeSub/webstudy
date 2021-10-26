@@ -1,38 +1,23 @@
-<!-- 
-    montserrat (.mont)
-    crimson (.crim)
- -->
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portland</title>
+    <title>portland</title>
     <link rel="stylesheet" href="css/import.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <header>
         <div class="mont">
             <label for="mui" class="material-icons">
                 menu
-                <!-- google fonts - search material icons에서 github페이지로 이동  -->
-                <!-- github readme에서 using a font에있는 link태그를 참조(title밑) -->
-                <!-- 원하는 icon을 클릭 후 icon font에있는 코드를 인용 -->
-                <!-- menu / menu_open에 따라 모양이 다름  -->
             </label>
             <h1>
                 <a href="/">
-                    <img src="images/logo.png" alt="Pontland">
+                    <img src="images/logo.png" alt="portland">
                 </a>
             </h1>
-            <!-- TODO : input 추가 예정 -->
-        
             <input type="checkbox" id="mui">
             <nav>
                 <ul>
@@ -40,121 +25,103 @@
                     <li><a href="">Devices</a></li>
                     <li><a href="">Delivery &amp; Payment</a></li>
                     <li><a href="">Guarantee</a></li>
-                    <li><a href="">About us</a></li>
+                    <li><a href="">About Us</a></li>
                 </ul>
             </nav>
             <div>
-                <strong>CART</strong>
-                <span>+99</span>
+                <strong>CART</strong><span>+00</span>
                 <input type="button" value="SIGN IN">
             </div>
         </div>
     </header>
-    <!-- header fin -->
+    <!-- ? header fin -->
+
     <nav>
-        <div class="sliderNav mont">
+        <div class="slideNav mont">
             <ul>
                 <li><a href="">Top Sales</a></li>
                 <li><a href="">Brand Focus</a></li>
                 <li><a href="" class="active">Hi-tech</a></li>
-                <li><a href="">Projects</a></li>
                 <li><a href="">Best Sellers</a></li>
+                <li><a href="">Projects</a></li>
                 <li><a href="">Support</a></li>
             </ul>
-            <input type="search" placeholder="I'm looking for..." title="search Field">
-            <!-- input-search가 ul와 합쳐서 공간이 딱 맞기 때문에 여기는 div를 쓰진 않는다. -->
+            <input type="search" placeholder="I’m looking for ..." title="search Field">
         </div>
     </nav>
-    <section class="slideArea">
-       <h2>sliderArea</h2>
-       <div>
-           <a href="" class="btn_conL">&lt;</a>
-           <a href="" class="btn_conR">&gt;</a>
-           <ol>
-               <li><a href="" class="active">slide</a></li>
-               <li><a href="">slide</a></li>
-               <li><a href="">slide</a></li>
-               <li><a href="">slide</a></li>
-           </ol>
-           <ul>
-               <li>
-                   <figure>
-                       <img src="images/sample_slider.png" alt="iPhone 6">
-                       <figcaption>
-                           <dl>
-                            <dt class="mont">
-                                iPhone 6 32Gb Black
-                            </dt>
-                            <dd class="crim">
-                               At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.
-                            </dd>
-                           </dl>
-                           <input type="button" value="BUY NOW" class="mont">
-                       </figcaption>
-                   </figure>
-               </li>
-           </ul>
-       </div> 
-    </section>
-    <!-- slider fin -->
+    <!-- ? slide nav Fin -->
 
+    <section class="slideArea">
+        <h2>sliderArea</h2>
+        <div>
+            <a href="" class="btn_conL">&lt;</a>
+            <a href="" class="btn_conR">&gt;</a>
+            <ol>
+                <li><a href="" class="active">slide</a></li>
+                <li><a href="">slide</a></li>
+                <li><a href="">slide</a></li>
+                <li><a href="">slide</a></li>
+            </ol>
+            <ul>
+                <li>
+                    <figure>
+                        <img src="images/sample_slider.png" alt="iPhone 6">
+                        <figcaption>
+                            <dl>
+                                <dt class="mont">iPhone 6 32Gb Black</dt>
+                                <dd class="crim">At first, for some time, I was not able to answer him one word; but as he had taken me in his arms I held fast by him, or I should have fallen to the ground.</dd>
+                            </dl>
+                            <input type="button" value="BUY NOW" class="mont">
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ? slider Fin -->
 
     <div class="contentArea mont">
-         <!-- 안쪽에 section을 쓰기 위해 div로 큰 틀을 잡아준다. -->
         <form>
-            <!-- why form? -->
-            <!-- 사용자의 조작으로 페이지의 내용이 변경되기 때문에 form을 써줌 -->
-            <!-- sort by form에서 값을 변경(ex)select)를 하면 바로 값이 변경 됨 -->
-            <!-- submit없이 바로 값이 변경되기 때문에 비동기패널 -->
             <fieldset>
-                <!-- selectbox1 -->
                 <label for="sb_Select">SORT BY :</label>
                 <span class="selectBox sbSelect">
-                    <!-- select를 수정해야 할 상황이 올때 이중 class를 통해 수정한다 -->
-                    <!-- selectBox라는 부모 클래스를 이용해 수정 -->
-                    <!-- 다른 페이지의 selectBox도 수정된다. -->
-                    <!-- 개별적으로 다른 selectBox는 뒤에 있는 sbSelect를 이용 -->
-                    <!-- 모듈링 css -->
-                    <!-- *자바의 객체 지향같은 느낌* -->
-                    <!-- sbSelect가 selectBox한테 상속 받는다는 느낌임 -->
                     <select id="sb_Select" title="sortBySelect">
                         <option>BEST MATCH</option>
                     </select>
                 </span>
-                <!-- keywords -->
                 <label for="sb_keywords">KEYWORDS</label>
                 <input type="search" id="sb_keywords">
-                <!-- price -->
                 <label for="range_minprice">PRICE</label>
                 <input type="text" id="range_minprice" title="searchSet minPrice">
                 <span>-</span>
-                <input type="text" id="range_maxprice" title="searchSet maxprice">
-                <!-- checkbox -->
+                <input type="text" id="range_maxprice" title="searchSet maxPrice">
                 <input type="checkbox" id="freeShipCheck">
                 <label for="freeShipCheck">Free Shipping</label>
-                <!-- selectbox2 -->
-                <label for="ship_Select">SHIP TO:</label>
+                <label for="ship_Select">SHIP TO :</label>
                 <span class="selectBox shipSelect">
                     <select id="ship_Select" title="shipSelect">
                         <option>USA</option>
-                        <option>United Arap Emirates</option>
+                        <option>United Arab Emirates</option>
                     </select>
                 </span>
             </fieldset>
+            <!-- ?동기 / 비동기 방식에 따라 form을 선택적으로 사용 할 수 있고, label과 input 다중일 경우 첫번째 input에 연결. -->
         </form>
-        <!-- sortby fin -->
+        <!-- ? sortBy Fin -->
+        
         <aside>
             <nav>
                 <ul>
                     <li>
-                        <a href="" >Top Sales</a>
+                        <a href="">Top Sales</a>
                         <ol>
                             <li><a href="">Cell Phones</a></li>
                             <li><a href="">Cameras</a></li>
                             <li><a href="">Computers</a></li>
-                            <li><a href="">Tv.Audio</a></li>
+                            <li><a href="">Tv, Audio</a></li>
                             <li><a href="">Video Games</a></li>
                         </ol>
+                        <!-- ? 2depth menu 구성시 1depth 구조 안에 2depth 항목들을 배치하면 쉽게 만들 수 있다.-->
                     </li>
                     <li>
                         <a href="">Brand Focus</a>
@@ -162,7 +129,7 @@
                             <li><a href="">Cell Phones</a></li>
                             <li><a href="">Cameras</a></li>
                             <li><a href="">Computers</a></li>
-                            <li><a href="">Tv.Audio</a></li>
+                            <li><a href="">Tv, Audio</a></li>
                             <li><a href="">Video Games</a></li>
                         </ol>
                     </li>
@@ -172,7 +139,7 @@
                             <li><a href="">Cell Phones</a></li>
                             <li><a href="">Cameras</a></li>
                             <li><a href="">Computers</a></li>
-                            <li><a href="">Tv.Audio</a></li>
+                            <li><a href="">Tv, Audio</a></li>
                             <li><a href="">Video Games</a></li>
                         </ol>
                     </li>
@@ -182,7 +149,7 @@
                             <li><a href="">Cell Phones</a></li>
                             <li><a href="">Cameras</a></li>
                             <li><a href="">Computers</a></li>
-                            <li><a href="">Tv.Audio</a></li>
+                            <li><a href="">Tv, Audio</a></li>
                             <li><a href="">Video Games</a></li>
                         </ol>
                     </li>
@@ -192,12 +159,14 @@
                             <li><a href="">Cell Phones</a></li>
                             <li><a href="">Cameras</a></li>
                             <li><a href="">Computers</a></li>
-                            <li><a href="">Tv.Audio</a></li>
+                            <li><a href="">Tv, Audio</a></li>
                             <li><a href="">Video Games</a></li>
                         </ol>
                     </li>
                 </ul>
             </nav>
+            <!-- ?2detph Menu 종료 -->
+
             <form>
                 <fieldset>
                     <legend>Available</legend>
@@ -226,32 +195,32 @@
                     <label for="brand_op4">Nest</label>
                     <span>5</span>
                 </fieldset>
-                <!-- TODO : id=condition_op1~5 -->
                 <fieldset>
                     <legend>
-                        CONDITION
+                        Condition
                         <a href="">SEE ALL</a>
                     </legend>
-                    <input type="checkbox" id="condition_op1">
-                    <label for="condition_op1">New</label>
-                    <input type="checkbox" id="condition_op2">
-                    <label for="condition_op2">Manufacture Refurbished</label>
-                    <input type="checkbox" id="condition_op3">
-                    <label for="condition_op3">Seller Refurbished</label>
-                    <input type="checkbox" id="condition_op4">
-                    <label for="condition_op4">Used</label>
-                    <input type="checkbox" id="condition_op5">
-                    <label for="condition_op5">For Parts or not Working</label>
+                    <input type="checkbox" id="Condition_op1">
+                    <label for="Condition_op1">New</label>
+                    <input type="checkbox" id="Condition_op2">
+                    <label for="Condition_op2">Manufacturer Refurbished</label>
+                    <input type="checkbox" id="Condition_op3">
+                    <label for="Condition_op3">Seller Refurbished</label>
+                    <input type="checkbox" id="Condition_op4">
+                    <label for="Condition_op4">Used</label>
+                    <input type="checkbox" id="Condition_op5">
+                    <label for="Condition_op5">For Parts or not Working</label>
                 </fieldset>
                 <fieldset>
                     <legend>Delivery Options</legend>
-                    <input type="radio" name="dlvr_select" id="dlvr_Free"><label for="dlvr_Free">FREE</label>
-                    <input type="radio" name="dlvr_select" id="dlvr_Dollor"><label for="dlvr_Dollor">$4.99</label>
+                    <input type="radio" name="dlvr_select" id="dlvr_free">
+                    <label for="dlvr_free">Free</label>
+                    <input type="radio" name="dlvr_select" id="dlvr_dollar">
+                    <label for="dlvr_dollar">$4.99</label>
                 </fieldset>
             </form>
         </aside>
-        <!-- aside fin -->
-
+        <!-- ? aside Fin -->
 
         <section>
             <h3>ProductList</h3>
@@ -262,7 +231,7 @@
                         <figcaption>
                             <dl>
                                 <dt>Apple TV 32GB</dt>
-                                <dd>BLACK</dd>
+                                <dd>Black</dd>
                                 <dd>$49.99</dd>
                             </dl>
                         </figcaption>
@@ -274,7 +243,7 @@
                         <figcaption>
                             <dl>
                                 <dt>Pebble Time</dt>
-                                <dd>RED</dd>
+                                <dd>Red</dd>
                                 <dd>$29.99</dd>
                             </dl>
                         </figcaption>
@@ -286,7 +255,7 @@
                         <figcaption>
                             <dl>
                                 <dt>Zendure 4-Port USB</dt>
-                                <dd>WHITE</dd>
+                                <dd>White</dd>
                                 <dd>$49.99</dd>
                             </dl>
                         </figcaption>
@@ -297,8 +266,8 @@
                         <img src="images/sample_product04.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Withings Smart Body  Analyzer ws-50</dt>
-                                <dd>BLACK</dd>
+                                <dt>Withings Smart Body Analyzer ws-50</dt>
+                                <dd>Black</dd>
                                 <dd>$39.99</dd>
                             </dl>
                         </figcaption>
@@ -310,12 +279,12 @@
                         <figcaption>
                             <dl>
                                 <dt>JBL Charge 2+</dt>
-                                <dd>BLACK</dd>
+                                <dd>Black</dd>
                                 <dd>$39.99</dd>
                             </dl>
                             <span>
-                                <a href="">16GB</a>
-                                <a href="">BY NOW</a>
+                                <a href="">16 Gb</a>
+                                <a href="">Buy Now</a>
                             </span>
                         </figcaption>
                     </figure>
@@ -326,7 +295,7 @@
                         <figcaption>
                             <dl>
                                 <dt>Ollo Clip New</dt>
-                                <dd>SILVER</dd>
+                                <dd>Silver</dd>
                                 <dd>$19.99</dd>
                             </dl>
                         </figcaption>
@@ -337,8 +306,8 @@
                         <img src="images/sample_product07.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Fitbit Charge HR Heart Rate  and Activity Tracker</dt>
-                                <dd>BLACK</dd>
+                                <dt>Fitbit Charge HR Heart Rate and Activity Tracker</dt>
+                                <dd>Black</dd>
                                 <dd>$19.99</dd>
                             </dl>
                         </figcaption>
@@ -349,8 +318,8 @@
                         <img src="images/sample_product08.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Apple Watch Sport 38mm  Silver Aluminum Case</dt>
-                                <dd>WHITE</dd>
+                                <dt>Apple Watch Sport 38mm Silver Aluminum Case</dt>
+                                <dd>White</dd>
                                 <dd>$49.99</dd>
                             </dl>
                         </figcaption>
@@ -361,8 +330,8 @@
                         <img src="images/sample_product09.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Bose SoundLink  On-Ear Headphones</dt>
-                                <dd>WHITE</dd>
+                                <dt>Bose SoundLink On-Ear Headphones</dt>
+                                <dd>White</dd>
                                 <dd>$119.99</dd>
                             </dl>
                         </figcaption>
@@ -373,8 +342,8 @@
                         <img src="images/sample_product10.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Sonos Play-1 Wireless  HiFi System</dt>
-                                <dd>BLACK</dd>
+                                <dt>Sonos Play-1 WirelessHiFi System</dt>
+                                <dd>Black</dd>
                                 <dd>$99.99</dd>
                             </dl>
                         </figcaption>
@@ -385,15 +354,17 @@
                         <img src="images/sample_product11.png" alt="productEx">
                         <figcaption>
                             <dl>
-                                <dt>Nest Learning Thermostat,  3rd Generation</dt>
-                                <dd>$49.99</dd>
+                                <dt>Nest Learning Thermostat, 3rd Generation</dt>
                                 <dd></dd>
+                                <dd>$49.99</dd>
                             </dl>
                         </figcaption>
                     </figure>
                 </li>
             </ul>
         </section>
+        <!-- ?contentList Fin -->
+
         <div class="paging">
             <a href="">&lt;</a>
             <a href="">&gt;</a>
@@ -406,18 +377,15 @@
                 <li><a href="">6</a></li>
                 <li><a href="">7</a></li>
                 <li><a href="">8</a></li>
-                <li><a href="">9</a></li>
-                <li><a href="">10</a></li>
             </ol>
         </div>
-        <!-- 페이징 jsp? -->
-        <!-- paging fin -->
+        <!-- ?pager Fin -->
     </div>
-    <!-- contentarea fin -->
-
+    <!-- ?contentArea Fin -->
 
     <section class="bestArea mont">
         <h2>Best Sellers</h2>
+        <!-- ?https://justforex.com/ko/education/currencies -->
         <ul>
             <li>
                 <figure>
@@ -427,8 +395,8 @@
                             <dt>Beanie</dt>
                             <dd>Green</dd>
                             <dd>
-                                <del>€39.99</del>
-                                €29.99
+                                <del>£39.99</del>
+                                £29.99
                             </dd>
                         </dl>
                     </figcaption>
@@ -442,8 +410,8 @@
                             <dt>T-Shirt With a Print</dt>
                             <dd>Dark Blue</dd>
                             <dd>
-                                <del>€29.99</del>
-                                €19.99
+                                <del>£29.99</del>
+                                £19.99
                             </dd>
                         </dl>
                     </figcaption>
@@ -454,11 +422,11 @@
                     <img src="images/sample_product14.png" alt="productEx">
                     <figcaption>
                         <dl>
-                            <dt>Pile_Lined Hooded Jacket</dt>
+                            <dt>Pile-Lined Hooded Jacket</dt>
                             <dd>Dark Blue</dd>
                             <dd>
-                                <del>€49.99</del>
-                                €39.99
+                                <del>£49.99</del>
+                                £39.99
                             </dd>
                         </dl>
                     </figcaption>
@@ -472,19 +440,20 @@
                             <dt>Trainers</dt>
                             <dd>Space Grey</dd>
                             <dd>
-                                <del>€39.99</del>
-                                €29.99
+                                <del>£39.99</del>
+                                £29.99
                             </dd>
                         </dl>
                     </figcaption>
                 </figure>
             </li>
-        </ul>    
+        </ul>
     </section>
-    <!-- bestseller fin -->
+    <!-- ?bestSellers Fin -->
+    
     <section class="tosayArea mont">
         <div>
-            <h2>What Our Custimers Have to Say</h2>
+            <h2>What Our Customers Have to Say</h2>
             <p class="crim">Couple of Words About This Stories Section</p>
             <ul>
                 <li>
@@ -492,13 +461,13 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt></dt>
-                                <dd class="crim"></dd>
+                                <dt>Celia Fields</dt>
+                                <dd class="crim">UX Expert</dd>
                             </dl>
                         </figcaption>
                     </figure>
-                    <p>
-                        This I have produced as a scantling  of Jack’s great eloquence 
+                    <p class="crim">
+                        This I have produced as a scantling of Jack’s great eloquence and the force of his reasoning upon such abstruse matters.
                     </p>
                 </li>
                 <li>
@@ -506,13 +475,13 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt></dt>
-                                <dd class="crim"></dd>
+                                <dt>Alexander Lee</dt>
+                                <dd class="crim">Founder</dd>
                             </dl>
                         </figcaption>
                     </figure>
                     <p class="crim">
-                        Looking cautiously round, to ascertain that they were not overh 
+                        Looking cautiously round, to ascertain that they were not overheard, the two hags cowered nearer to the fire, and chuckled heartily.
                     </p>
                 </li>
                 <li>
@@ -520,49 +489,46 @@
                         <img src="images/sample_face.png" alt="faceExample">
                         <figcaption>
                             <dl>
-                                <dt></dt>
-                                <dd class="crim"></dd>
+                                <dt>Lenora Sandoval</dt>
+                                <dd class="crim">Product Manager</dd>
                             </dl>
                         </figcaption>
                     </figure>
                     <p class="crim">
-                        This sounded a very good reason, and Alice was quite pleased to
+                        This sounded a very good reason, and Alice was quite pleased to know it. 'I never thought of that before!' she said.
                     </p>
                 </li>
             </ul>
         </div>
     </section>
-    <footer class="crim">
+    <!-- ? talk's Area Fin -->
+
+    <footer class="mont">
         <div>
             <h2>
-                <img src="images/logo_footer.png" alt="pontaland">
+                <img src="images/logo_footer.png" alt="portland">
             </h2>
-            <!-- <nav> -->
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">Shop</a></li>
-                    <li><a href="">Team</a></li>
-                    <li><a href="">About Us</a></li>
-                    <li><a href="">Contacts</a></li>
-                </ul>
-            <!-- </nav> -->
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Shop</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contacts</a></li>
+            </ul>
             <span>
                 <a href="">twitter</a>
                 <a href="">facebook</a>
                 <a href="">google</a>
             </span>
         </div>
-        <hr>
         <div>
-            <p class="crim">She gave my mother such a turn, that I have always been convinc</p>
+            <p class="crim">She gave my mother such a turn, that I have always been convinced I am indebted to Miss Betsey for having been born on a Friday.</p>
             <span>
                 <a href="">Privacy Policy</a>
                 <a href="">Terms and Conditions</a>
             </span>
         </div>
     </footer>
+    <!-- ?footer fin-->
 </body>
 </html>
-<!-- class : 여러개의 요소에 지정 가능,보통 한번에 수정하는 용도로 사용 -->
-<!-- name : 여러개의 요송에 지정이 가능하지만, css선택자로는 사용 불가능-->
-<!-- id : 변수로 생각 하면됨 -->
