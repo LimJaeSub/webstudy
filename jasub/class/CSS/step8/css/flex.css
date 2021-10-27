@@ -84,7 +84,7 @@
 /* ======================justifyContent==============================   */
 
 .flexContainer.justifyContent{
-    justify-content:space-around;
+    justify-content:space-evenly;
     background-color:green;
     /* 
         flex-start,end
