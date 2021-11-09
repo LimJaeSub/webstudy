@@ -1,5 +1,5 @@
 const h1 = document.querySelector(".hello h1");
-
+console.log(h1);
 // function titleClick(){
 //     if(title.style.color == "blue")
 //     {
