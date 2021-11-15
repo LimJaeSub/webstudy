@@ -1,0 +1,17 @@
+*{
+    margin:0;
+    padding:0;
+}
+.buttondiv{
+    position:fixed;
+    right:0;
+}
+div:not(.buttondiv){
+    width:100px;
+    height:100px;
+    background-color:burlywood;
+    margin-bottom:10px;
+}
+div.special{
+    background-color:chocolate;
+}
