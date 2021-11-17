@@ -146,14 +146,50 @@ function async(){
 
 function createCount(){
     
-    var count=0;
+    var count=0;//원래는 죽어야 하는 변수다.
 
     function addCount(){
         count++;
         return count;
     }
-    return addCount;
+    return addCount;//리턴 후 외부함수는 종료.
+    //그러나 내부함수는 외부함수의 지역변수인 count를 가진 상태로 살아있음.
     
 }
 var counter = createCount();
 
+// ? 내부함수가 외부함수의 지역변수를 가진 상태로 더 오래 살아남으면
+// 해당 지역변수는 죽지않고 계속 유지된다.
+
+$(document).ready(function(){
+    $("#btnStart").click(function(){
+        start();//1. start 실행
+        document.write('count Start');
+    });
+});
+function start(){
+    var count=0;//2. 변수 초기화
+    setInterval(function(){
+        count++;//3.count사용중
+        document.write(count);//4.count사용중
+    },1000);
+}
+
+
+// 익명함수를 이용한 클로저
+function outerFunction(name){
+    var output='hello'+name;
+    return function(){
+        return output;
+    }
+}
+
+var first = outerFunction('hello');
+var second = outerFunction('hi');
+
+
+
+/* 
+    Closure를 사용하면 좋은 점
+    연관성 있는 변수와 기능을 하나의 함수로 묶어 놓고 여러번 사용 가능
+*/
