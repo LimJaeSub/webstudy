@@ -1,3 +1,4 @@
+<!-- https://fontawesome.com/v5.15/icons?d=gallery&p=2 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,13 +7,78 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/bba7cacd9f.js"></script>
     <script src="js/etc3.js"></script>
     <title>Document</title>
+    <style>
+        .material-icons,.cp .label{
+            cursor:pointer;
+        }
+        .cp .ico{
+            width:15px;
+        }
+        .cp span{
+            display:inline-block;
+            vertical-align: middle;
+            line-height:15px;
+        }
+        .tabMenu{
+            display:flex;
+            padding:0;
+        }
+        .tabMenu li{
+            display:block;
+            width:33.33%;
+            flex-flow:row nowrap;
+            padding:0;
+            list-style:none;
+            text-align:center;
+            background-color:black;
+            color:white;
+            border:1px solid black;
+            border-radius:10px;
+            box-sizing: border-box;
+            justify-content:space-between;
+        }
+        .tabMenu li.activated{
+            background-color:white;
+            color:black;
+        }
+
+        .tabPage{
+            border:1px solid black;
+            padding:30px;
+            text-align:center;
+            display:none;
+        }
+        .tabPage.activated{
+            display:block;
+        }
+    </style>
 </head>
 <body>
     <!-- case1 .navicon 동작 구현 -->
     <span class="material-icons menu">
         menu
     </span>
+
+
+    <!-- case2 checkBox -->
+    <div class="cp checkBox">
+        <span class="ico check"></span>
+        <span class="label">
+            Click
+        </span>
+    </div>
+
+    <!-- case3 tabPage make -->
+    <ul class="tabMenu">
+        <li data-tabNumb="tab1" class="activated">tabMenu1</li>
+        <li data-tabNumb="tab2">tabMenu2</li>
+        <li data-tabNumb="tab3">tabMenu3</li>
+    </ul>
+    <div id="tab1" class="tabPage activated">tabPage1</div>
+    <div id="tab2" class="tabPage">tabPage2</div>
+    <div id="tab3" class="tabPage">tabPage3</div>
 </body>
 </html>
