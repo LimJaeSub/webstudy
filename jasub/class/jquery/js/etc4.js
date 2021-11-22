@@ -2,7 +2,6 @@ $(document).ready(function(){
     // case1
     imgAlignHori();
     imgMix();
-    
 });
 
 function imgAlignHori(){
@@ -36,22 +35,29 @@ function imgMix(){
         var imgHeight = img.height();
         for(var i =0; i<imgLength;i++){
             var image = img.eq(i);
-            if(i%3==0){
-                ypos=(i/3)*imgHeight;
-                xpos=0;
-                image.css("left",xpos);
-                image.css("top",ypos);
+            // if(i%3==0){
+            //     ypos=parseInt(i/3)*imgHeight;
+            //     xpos=0;
+            //     image.css("left",xpos);
+            //     image.css("top",ypos);
                 
-                console.log("if on i:"+i+" xpos:"+xpos);
-                console.log("if on i:"+i+" ypos:"+ypos);  
-            }
-            else{
-                xpos = (i%3)*imgWidth;
-                image.css("left",xpos);
-                image.css("top",ypos);
-                console.log("i:"+i+" Xpos:"+xpos);
-                console.log("i:"+i+" ypos:"+ypos);
-            }
+            //     console.log("if on i:"+i+" xpos:"+xpos);
+            //     console.log("if on i:"+i+" ypos:"+ypos);  
+            // }
+            // else{
+            //     xpos = (i%3)*imgWidth;
+            //     image.css("left",xpos);
+            //     image.css("top",ypos);
+            //     console.log("i:"+i+" Xpos:"+xpos);
+            //     console.log("i:"+i+" ypos:"+ypos);
+            // }
+
+            xpos = (i%3)*imgHeight;
+            ypos = parseInt(i/3)*imgHeight;
+            image.css({
+                "left":xpos,
+                "top":ypos
+            });
         }
         
     });
