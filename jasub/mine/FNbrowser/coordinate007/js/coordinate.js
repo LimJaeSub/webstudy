@@ -2,19 +2,32 @@ $(document).ready(function(){
     setInterval(function(){
         var result1 = Math.floor(Math.random()*(100-0)+0);
         var result2 = Math.floor(Math.random()*(100-0)+0);
-        console.log(result1);
-        console.log(result2);
+        // console.log(result1);
+        // console.log(result2);
         $("#shoot").css({
             "left":result1+"%",
             "top":result2+"%"
         });
     },700);
 });
+
+//? 전역변수
 const vertical = $(".vertical");
 const horizontal = $(".horizontal");
 const target = $(".target");
-const score = $(".score");
+var score = $(".score");
+var count=0;
 
+//? 클릭시 실행 함수
+$("#shoot").click(function(){
+    // count++;
+    // score.text(count);
+    console.log("hello");
+});
+
+
+// ?===========================================================
+// ?조준점
 function testfunc(event){
     const x = event.clientX;
     const y = event.clientY;
@@ -33,8 +46,5 @@ function testfunc(event){
 }
 $(document).mousemove(testfunc);
 
-//1.마우스가 div를 클릭했을때 <<여기막힘
-//2.score++
-//3.score에 innerhtml(score);
 
 
