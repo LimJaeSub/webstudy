@@ -1,9 +1,15 @@
+//? 전역변수
+const vertical = $(".vertical");
+const horizontal = $(".horizontal");
+const target = $(".target");
+var score = $(".score");
+var count=0;
+
+
 $(document).ready(function(){
     setInterval(function(){
         var result1 = Math.floor(Math.random()*(100-0)+0);
         var result2 = Math.floor(Math.random()*(100-0)+0);
-        // console.log(result1);
-        // console.log(result2);
         $("#shoot").css({
             "left":result1+"%",
             "top":result2+"%"
@@ -11,12 +17,6 @@ $(document).ready(function(){
     },700);
 });
 
-//? 전역변수
-const vertical = $(".vertical");
-const horizontal = $(".horizontal");
-const target = $(".target");
-var score = $(".score");
-var count=0;
 
 //? 클릭시 실행 함수
 $("#shoot").click(function(){
@@ -31,8 +31,6 @@ $("#shoot").click(function(){
 function testfunc(event){
     const x = event.clientX;
     const y = event.clientY;
-    //console.log(`${x} ${y}`);
-
     vertical.css("left",x+"px");
     horizontal.css("top",y+"px");
     target.css({
