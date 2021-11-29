@@ -2,10 +2,11 @@
 const vertical = $(".vertical");
 const horizontal = $(".horizontal");
 const target = $(".target");
+
 var score = $(".score");
 var count=0;
 
-
+console.log(target);
 $(document).ready(function(){
     setInterval(function(){
         var result1 = Math.floor(Math.random()*(100-0)+0);
@@ -19,11 +20,7 @@ $(document).ready(function(){
 
 
 //? 클릭시 실행 함수
-$("#shoot").click(function(){
-    // count++;
-    // score.text(count);
-    console.log("hello");
-});
+
 
 
 // ?===========================================================
@@ -31,15 +28,13 @@ $("#shoot").click(function(){
 function testfunc(event){
     const x = event.clientX;
     const y = event.clientY;
-    vertical.css("left",x+"px");
-    horizontal.css("top",y+"px");
+    vertical.css("transform",`translateX(${x}px)`);
+    horizontal.css("transform",`translateY(${y}px)`);
     target.css({
-        "left":x+"px",
-        "top":y+"px"
+        "transform":`translate(${x}px,${y}px)`
     });
     score.css({
-        "left":x+"px",
-        "top":y+"px"
+        "transform":`translate(${x}px,${y}px)`
     });
 }
 $(document).mousemove(testfunc);
