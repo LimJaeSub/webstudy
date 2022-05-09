@@ -46,10 +46,39 @@ $(document).ready(function(){
         //? css timing function 사용 가능 defalut는 null, 잘 사용 안함
         captions:true,
         //? title show ,default:false
-        video:true
+        video:true,
         //! default: false. video미사용시 절대 활성화 하지 말것
 
-            
+
+        responsive: true, //? default: true. slider 자체 반응형 켜기.
+
+        // *pager - indicator
+        pager: true, //? default: true. pager 켜기 / 끄기
+        pagerType: 'full', //? default: full.(circle) / short : count로 변경
+        //? pagerShortSeparator: ' . '  short일 경우 식별자(separator) 변경.
+        //pagerSelector: '.newPager'
+        pagerCustom : '.customPager',
+        
+        //*controler
+        controls:true,
+        nextSelector:'.btn_next',
+        prevSelector:'.btn_prev',
+        nextText:'다음',
+        prevText:'이전',
+        //prev next 들의 이름을 바꿈
+
+        auto:true,
+        //default:false (slide자동전환 on/off)
+        stopAutoOnClick:false,
+        //default:false (control 버튼을 클릭하였을때 자동전환 중지)
+        pause:1000,
+        //멈추는 시간
+        autoStart:true,
+        //default:true (화면 준비가 완료되면 바로 자동전환 시작.)
+        autoHover:true,
+        //hover 상태일때 자동전환 중지
+        autoControls:true,
+        //autoControlsSelector:'autoControls'
     });
 
     
