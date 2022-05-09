@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Nanum+Pen+Script&family=Poppins:wght@300;400;500;600;700;800&family=Yeon+Sung&display=swap');
+
+/* default styles */
+
+*,*::before,*::after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+/* -------------Website Theme------------- */
+:root{
+    --hue-1:257;
+    --hue-2:47;
+    --bg-color:hsl(var(--hue-1),100%,97%);
+    --main-color-1:hsl(var(--hue-1),100%,60%);
+    --main-color-dark-1:hsl(var(--hue-1),69%,50%);
+    --main-color-2:hsl(var(--hue-2),100%,61%);
+    --main-color-dark-2:hsl(var(--hue-2),82%,55%);
+    --bg-color-1:hsl(var(--hue-1),100%,97%);
+    --bg-color-transparent:rgba(255,255,255,0.6);
+    --heading-color:hsl(var(--hue-1),61%,24%);
+    --text-color:hsl(var(--hue-1),17%,63%);
+    --section-padding:7rem;
+}
+
+body{
+    overflow-x:hidden;
+    background-color:var(--bg-color);
+    font-family:"Poppins",sans-serif;
+}
+
+::selection{
+    /* font drag color */
+    background-color:hsla(var(--hue-1),100%,60%,0.9);
+    color:#ffffff;
+}
+
+a{
+    text-decoration:none;
+}
+
+ul{
+    list-style:none;
+}
+/* -------------Reuable CSS Code------------- */
+.container{
+    position:relative;
+    width:100%;
+    max-width:75rem;
+    padding:0 1.5rem;
+    margin:0 auto;
+}
+.logo{
+    margin-right:1.5rem;
+    height:120px;
+    line-height:120px;
+    font-family: "Abril Fatface",cursive;
+    font-size:1.5rem;
+    color:var(--heading-color);
+    letter-spacing: 1px;
+    transition:0.7s;
+}
+.logo span{
+    color:var(--main-color-1);
+}
+.sub-heading{
+    color:var(--heading-color);
+    text-transform:uppercase;
+    font-size:0.85rem;
+    letter-spacing:0.5px;
+    border-left:3px solid var(--main-color-2);
+    padding:0.13rem 0.75rem;
+    margin-bottom:1rem;
+    font-weight:1000;
+}
+
+.heading{
+    color:var(--heading-color);
+    font-size:3rem;
+    font-family:"Abril Fatface", cursive;
+    font-weight:400;
+    line-height:1.3;
+}
+
+.text{
+    color:var(--text-color);
+    font-size:0.9rem;
+    margin:2rem 0;
+    line-height:2.3;
+}
+.btn{
+    display:inline-block;
+    padding:0.9rem,1.75rem;
+    width:30%;
+    height:2rem;
+    border-radius:17px;
+    background-color:var(--main-color-1);
+    color:#ffffff;
+    font-size:0.85rem;
+    letter-spacing:0.7px;
+    text-align:center;
+    line-height:2rem;
+    text-transform:capitalize;
+}
+.btn:hover{
+    background-color:var(--main-color-dark-1);
+}
+.btn.secondary-btn{
+    position:relative;
+    background-color:transparent;
+    color:var(--main-color-1);
+    font-weight:500;
+    font-size:0.9rem;
+    letter-spacing: 0px;
+    border-bottom:2.5px solid var(--main-color-2);
+    border-radius:0px;
+}
+.btn.secondary-btn::before{
+    content:"";
+    position:absolute;
+    width:0%;
+    height:2.5px;
+    left:0;
+    bottom:-2px;
+    background-color:var(--main-color-1);
+    transition:0.3s ease-in-out;
+}
+.btn.secondary-btn:hover::before{
+    width:100%;
+}
+
+.section{
+    position:relative;
+    padding:var(--section-padding) 0;
+}
+
+
+/* -------------Navbar Style------------- */
+
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:10;
+    transition:0.7s;
+}
+header.scrolled{
+    background-color:var(--bg-color-transparent);
+    box-shadow: 0 5px 20px 0.1px rgba(0,0,0,0.1);
+    backdrop-filter:blur(15px);
+}
+
+
+nav.container{
+    display:flex;
+    align-items :center;
+    flex-wrap:wrap;
+}
+
+
+header .logo{
+    height:120px;
+    line-height:120px;
+}
+header.scrolled .logo{
+    height:80px;
+    line-height:80px;
+}
+
+.links{
+    flex:1;
+    display:flex;
+    justify-content:space-between;
+}
+
+.links ul{
+    display:flex;
+    align-items:center;
+    width:100%;
+}
+
+.nav-link{
+    position:relative;
+    display:inline-block;
+    margin:0 1rem;
+    text-transform:uppercase;
+    font-size:0.8rem;
+    letter-spacing:0.5px;
+    color:var(--text-color);
+    font-weight:500;
+    opacity:0.9;
+    transition:0.3s;
+}
+.nav-link::after{
+    content:"";
+    position:absolute;
+    width:0;
+    height:10px;
+    border-radius:5px;
+    background-color:var(--main-color-1);
+    bottom:0;
+    left:-1px;
+    z-index:-1;
+    opacity:0;
+    transition:0.3s;
+}
+.nav-link:hover{
+    color:var(--heading-color);
+}
+.nav-link:hover::after{
+    width:100%;
+    opacity:0.2;
+}
+
+.toggle-btn{
+    color:var(--heading-color);
+    min-width:40px;
+    height:40px;
+    background-color:#ffffff;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:1.1rem;
+    cursor:pointer;
+    box-shadow:0 0 8px rgb(0,128,128,0.7);
+    transition:0.3s;
+    margin-right:1rem;
+}
+.toggle-btn:hover{
+    filter:brightness(50%);
+}
+
+
+/* --------------section style-------------- */
+.showcase-area{
+  padding:120px 0; 
+  /* header height : 120px */
+  width: 100%;
+  overflow:hidden;
+}
+
+.showcase-area .container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    height:calc(100vh - 120px);
+    max-height:600px;
+    align-items:center;
+    
+}
+
+.showcase-area .sub-heading{
+    margin-bottom:0.7rem;
+}
+.showcase-area .heading{
+    font-size:3rem;
+}
+.showcase-area .text{
+    margin: 0.8rem 0; 
+}
+.cta{
+    margin-top:1rem;
+    display:flex;
+    align-items:center;
+}
+
+.cta .btn{
+    margin-right:1.5rem;
+}
+
+
+
+.showcase-image{
+    position:relative;
+    min-height:120%;
+    width:100%;
+    background-image:linear-gradient(124deg,var(--main-color-1),var(--main-color-2));
+    margin-top:-120px;
+    border-radius:0 0 80px 80px;
+}
+
+.showcase-image .puppy{
+    position:absolute;
+    width:95%;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+}
+
+
+/* --------------------About Section---------------- */
+.about .container{
+    display:grid;
+    grid-template-columns: 1.05fr 1fr;
+    align-items:center;
+}
+.about .text{
+    margin:3rem 0 4rem;
+}
+
+.st0{
+    width:60px;
+}
+
+
