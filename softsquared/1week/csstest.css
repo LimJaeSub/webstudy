@@ -1,0 +1,89 @@
+.font{
+    border:3px solid black;
+    display:inline-block;
+    width:300px;
+}
+.font h1{
+    text-align: center;
+}
+.font h3{
+    text-align: center;
+}
+
+
+p{
+    border:1px solid black;
+}
+
+
+/* line-height */
+p.normal{
+    font-size:15px;
+    color:red;
+    line-height: normal;
+}
+
+p.lineheight1{
+    font-size:15px;
+    color:blue;
+    line-height: 20px;
+}
+p.lineheight2{
+    font-size:30px;
+    color:black;
+    line-height:4;
+}
+/* text-align */
+p.center{
+    text-align: center;
+}
+p.left{
+    text-align: left;
+}
+p.right{
+    text-align: right;
+}
+
+
+/* spacing */
+
+p.letter{
+    letter-spacing: 20px;
+    /* 글자 간 간격 */
+}
+p.word{
+    word-spacing: -10px;
+    /* 단어 사이의 간격 */
+}
+
+
+
+/* text-transform */
+
+input.upper{
+    text-transform: uppercase;
+}
+input.lower{
+    text-transform: lowercase;
+}
+
+
+
+
+/* text-decoration */
+
+p.underline{
+    text-decoration: underline double red;
+}
+p.overline{
+    text-decoration: overline;
+}
+p.linethrough1{
+    text-decoration: line-through wavy blue;
+}
+p.linethrough2{
+    text-decoration: line-through dotted blue;
+}
+p.linethrough3{
+    text-decoration: line-through dashed blue;
+}
