@@ -1,12 +1,12 @@
-.font{
+.division{
+    float:left;
+    width:30%;
     border:3px solid black;
-    display:inline-block;
-    width:300px;
 }
-.font h1{
-    text-align: center;
+h1{
+    text-align:center;
 }
-.font h3{
+h3{
     text-align: center;
 }
 
@@ -86,4 +86,61 @@ p.linethrough2{
 }
 p.linethrough3{
     text-decoration: line-through dashed blue;
+}
+
+
+
+
+/* selector*/
+
+
+/* property */
+.property input[alt]{
+    color:red;
+}
+.property input[type=text]{
+    text-decoration:line-through;
+}
+.property input[alt^=start]{
+    color:blue;
+}
+.property input[alt$=end]{
+    color:aqua;
+}
+.property input[alt*=all]{
+    color:brown;
+}
+
+/* virtual */
+.virtual p{
+    text-align:center;
+}
+
+.virtual p:first-child{
+    color:red;
+}
+
+.virtual p:last-child{
+    color:blue;
+}
+.virtual p:nth-child(3){
+    color:aqua;
+}
+.virtual p:first-of-type{
+    text-decoration: line-through;
+}
+.virtual p:last-of-type{
+    text-decoration:underline;
+}
+.virtual p:nth-of-type(4){
+    color:blueviolet;
+}
+.virtual a:link{
+    color:lightcoral;
+}
+.virtual button:active{
+    background-color: aqua;
+}
+.virtual input[type="radio"]:checked{
+    box-shadow: 0 0 0 3px orange;
 }
