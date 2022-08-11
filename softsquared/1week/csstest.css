@@ -271,7 +271,7 @@ p.linethrough3{
 /* row/row-resevse/column/column-reverse */
 .container1{
     display:flex;
-    flex-direction:row-reverse;
+    flex-direction:row;
 }
 
 /* flex-wrap : 요소들이 강제로 한줄에 배치되도록 할 것인지,여러 행으로 나누어서 표현할건지 설정 */
@@ -306,8 +306,11 @@ p.linethrough3{
 }
 
 /* flex-grow : 컨테이너의 남은 공간을 item들이 가지게됨(늘어나는 영역의 비율)*/
+.item2{
+    flex-grow:1;
+}
 .item2:nth-child(2){
-    flex-grow:9;
+    flex-grow:3
 }
 
 /* flex-basis : flex-grow에서 요소의 크기가 다를 경우의 너비차이를 잡아줌 */
