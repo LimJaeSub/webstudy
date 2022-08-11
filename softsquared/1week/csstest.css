@@ -144,3 +144,51 @@ p.linethrough3{
 .virtual input[type="radio"]:checked{
     box-shadow: 0 0 0 3px orange;
 }
+.virtual p:hover{
+    color:#a200ff;
+}
+.virtual p:active{
+    color:#00ff15;
+}
+
+/* before_after */
+.before_after p:first-of-type:active::before{
+    content:"Im before";
+    color:red;
+}
+.before_after p:last-of-type:active::after{
+    content:"Im after";
+    color:red;
+}
+
+/* combination */
+.combination .p1~span{
+    color:red;
+}
+.combination .p2+span{
+    color:blue;
+}
+
+/* inheritance */
+.inheritance .parent{
+    color:red;
+}
+.inheritance .child:first-of-type{
+    color:initial;
+}
+.inheritance .child:nth-child(2){
+    color:inherit;
+}
+.inheritance .child:nth-child(3){
+    color:unset;
+}
+
+/* layout */
+.layout .image{
+    width:100px;
+    height:100px;
+    background-color: hotpink;
+}
+.layout p{
+    border:initial;
+}
