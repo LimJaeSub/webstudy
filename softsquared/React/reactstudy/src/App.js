@@ -1,5 +1,5 @@
-import Hello from './Hello';
-import Hi from './Hi';
+import Hello from './components/Hello';
+import Hi from './components/Hi';
 function App() {
 
   const users =[{
