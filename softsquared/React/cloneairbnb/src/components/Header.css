@@ -1,0 +1,61 @@
+.header{
+    height:80px;
+    margin:0 80px;
+    padding:0 80px;
+    /* flex */
+    display:flex;
+}
+.header img{
+    width:20%;
+    height:100%;
+    object-fit:scale-down;
+}
+.logo{
+    flex:1;
+}
+
+.search{
+    flex:1;
+    width:100%;
+    margin-top:16px;
+}
+.search .wrap-searchBar{
+    padding:0 15%;
+}
+.search .wrap-searchBar .searchBar{
+    border:1px solid #e0e0e0;
+    height:48px;
+    line-height:48px;
+    width:90%;
+    padding:0 0 0 10%;
+    border-radius: 50px;
+    display:flex;
+}
+.search .wrap-searchBar .searchBar .searchBar-block{
+    flex:2;
+    font-size:13px;
+    text-align: center;
+}
+.search .wrap-searchBar .searchBar .searchBar-button{
+    flex:1;
+    display:flex;
+    align-items: center;
+}
+.search .wrap-searchBar .searchBar .searchBar-button .searchBar-button-icon-wrap{
+    background-color: red;
+    color:white;
+    border-radius: 20px;
+    width:70%;
+    height:70%;
+    text-align:center;
+    line-height:43px;
+}
+.search .wrap-searchBar .searchBar .searchBar-button .searchBar-button-icon-wrap .searchBar-button-icon{
+    font-size:20px;
+}
+
+
+.usertools{
+    flex:1;
+    text-align:right;   
+}
