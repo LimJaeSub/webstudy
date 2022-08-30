@@ -1,0 +1,13 @@
+.wrap-slider{
+    margin-top:20px;
+    display:flex;
+    justify-content: center;
+}
+.wrap-slider .slider-block{
+    background-color: red;
+    text-align: center;
+}
+.wrap-slider .slider-block img{
+    height:30px;
+    margin:0 auto;
+}

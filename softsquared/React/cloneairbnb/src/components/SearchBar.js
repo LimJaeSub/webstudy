@@ -9,7 +9,7 @@ function SearchBar(props) {
         <div className='searchBar-block'>게스트 추가</div>
         <div className='searchBar-button'>
             <div className="searchBar-button-icon-wrap">
-                <span class="searchBar-button-icon material-symbols-outlined">search</span>
+                <span className="searchBar-button-icon material-symbols-outlined">search</span>
             </div>
         </div>
     </div>
