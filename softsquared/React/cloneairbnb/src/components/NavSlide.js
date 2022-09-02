@@ -29,14 +29,13 @@ const NavSlide = ({getData})=>{
 
     const onClickimage = (e)=>{
         setHouseNumber(e.target.alt);
-        console.log(housenumber);
         getData(housenumber);
     }
 
 
     return(
         <div className="wrap-slider">
-            <Slider {...settings}>
+            <Slider className="slick-slide-nav" {...settings}>
                 <div className="slider-block">
                     <img src={Icon1} onClick={onClickimage} alt="number1"></img>
                     <span>A자형 주택</span>

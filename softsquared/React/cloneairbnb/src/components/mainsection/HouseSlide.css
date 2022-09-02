@@ -1,0 +1,14 @@
+.wrap-houseslide{
+    width:300.8px;
+    height:285.75px;
+}
+.wrap-houseslide .block-house{
+    width:100%;
+    height:100%;
+}
+.wrap-houseslide .block-house img{
+    width:300.8px;
+    height:285.75px;
+    object-fit:cover;
+    border-radius: 20px;
+}
