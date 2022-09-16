@@ -24,7 +24,8 @@ const HouseData = [
     distance:"7,892km",
     price:128642,
     star:"★ 4.87",
-    picture:[__house1,__house2,__house3]
+    picture:[__house1,__house2,__house3],
+    housetitle:"별이 "
   },
   {
     key:2,
@@ -231,11 +232,17 @@ const HouseData = [
 ]
 function App() {
   const [housetype,setHouseType] = useState("number1");
+  const [isdetailpage,setIsdetailpage] = useState(false);
+  const [detailHouseData,setdetailHouseData] = useState();
 
-  
+
 
   const getData = (HouseType)=>{
     setHouseType(HouseType);
+  }
+
+  const getData2 = (dispatchHouseData)=>{
+    console.log(dispatchHouseData);
   }
 
   const filterarray = HouseData.filter(it=>it.houseStyle===housetype);
@@ -244,25 +251,32 @@ function App() {
   return (
     <div className="App">
       <Header></Header>
-      <NavSlide housetype={housetype} getData={getData}></NavSlide>
-      <section className="mainsection">
-        {filterarray.map(
-          (data)=>
-          <House
-          key={data.key}
-          houseStyle={data.houseStyle}
-          housename={data.housename}
-          date={data.date}
-          distance={data.distance}
-          price={data.price}
-          star={data.star}
-          picture={data.picture}></House>
-        )}
-      </section>
+      {isdetailpage
+      ?
+      <div>im detail</div>
+      :
+      <div>
+        <NavSlide housetype={housetype} getData={getData}></NavSlide>
+        <section className="mainsection">
+          {filterarray.map(
+            (data)=>
+            <House
+            getData2={getData2}
+            key={data.key}
+            houseStyle={data.houseStyle}
+            housename={data.housename}
+            date={data.date}
+            distance={data.distance}
+            price={data.price}
+            star={data.star}
+            picture={data.picture}></House>
+          )}
+        </section>  
+      </div>}
+      
     </div>
   );
 }
 
 export default App;
-
 

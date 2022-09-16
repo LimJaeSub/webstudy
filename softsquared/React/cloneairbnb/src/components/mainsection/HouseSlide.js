@@ -17,6 +17,7 @@ import __house9 from '../../img/house/house9.jpg';
 import __house10 from '../../img/house/house10.jpg';
 
 function HouseSlide(props) {
+
     const settings={
         dots:false,
         infinite:true,
@@ -26,10 +27,10 @@ function HouseSlide(props) {
         prevArrow:false,
         nextArrow:false,
     }
+
     
 
     const showpicture = props.picture;
-    console.log(showpicture[0]);
   return (
     <div className='wrap-houseslide'>
         <Slider className='slick-slider-house' {...settings}>

@@ -4,6 +4,16 @@ import HouseInformation from './HouseInformation.js';
 import './House.css';
 function House(props) {
   const picture = props.picture;
+  const getData2 = props.getData2;  
+  const onClickHouseSlide = ()=>{
+    const dispatchHouseData = {
+      price:props.price,
+      star:props.star,
+      housename:props.housename,
+      picture:props.picture,
+    }
+    getData2(dispatchHouseData);
+  }
   const information={
     key:props.key,
     housename:props.housename,
@@ -14,7 +24,9 @@ function House(props) {
   }
   return (
     <div className='wrap-house'>
-        <HouseSlide picture={picture}  />
+        <div onClick={onClickHouseSlide}>
+          <HouseSlide picture={picture}/>
+        </div>
         <HouseInformation information={information}/>
     </div>
   )
