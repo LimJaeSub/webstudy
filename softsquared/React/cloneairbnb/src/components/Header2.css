@@ -20,14 +20,30 @@
 .search2{
     flex:1;
     width:100%;
-    margin-top:16px;
 }
 .search2 .wrap-searchBar2{
-    padding:0 15%;
+    padding:0 10%;
+    height:44px;
+    line-height:44px;
 }
 .search2 .wrap-searchBar2 .searchBar2{
     display:flex;
+    justify-content: space-around;
+    border:1px solid #e0e0e0;
+    border-radius:40px;
+    height:100%;
+    margin:17px 0;
+    box-shadow:2px 2px 2px gray;
 }
 .search2 .wrap-searchBar2 .searchBar2 .searchBar-block{
-    background:red;
+
+}
+.search2 .wrap-searchBar2 .searchBar2 .searchBar-button{
+
+}
+
+/* section */
+.ordersection{
+    margin:0 200px;
+    padding:0 200px;
 }
