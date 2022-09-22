@@ -1,13 +1,16 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import Header2 from '../Header2.js';
 import UserReview from './UserReview.jsx';
-function orderHouse() {
+import {useLocation} from 'react-router-dom';
+function OrderHouse() {
+  const location = useLocation();
+  const information=location.state.houseinformation; //정보 전달
   return (
     <div>
         <Header2 />
         <div className="ordersection">
           <div className="house-title">
-            <h3>여기에 집 제목 쓸거임</h3>
+            <h3>{information.housename}</h3>
             <span>평점,후기</span><span>호스트</span><span>공유하기 저장</span>
           </div>
 
@@ -60,7 +63,7 @@ function orderHouse() {
   )
 }
 
-export default orderHouse
+export default OrderHouse
 
 
 // fix 변수를 useState로 설정

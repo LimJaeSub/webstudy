@@ -240,10 +240,6 @@ function Home() {
       setHouseType(HouseType);
     };
   
-    const getData2 = (dispatchHouseData) => {
-      console.log(dispatchHouseData);
-    };
-  
     const filterarray = HouseData.filter((it) => it.houseStyle === housetype);
   return (
     <div className="App">
@@ -253,7 +249,6 @@ function Home() {
           <section className="mainsection">
             {filterarray.map((data) => (
               <House
-                getData2={getData2}
                 key={data.key}
                 houseStyle={data.houseStyle}
                 housename={data.housename}

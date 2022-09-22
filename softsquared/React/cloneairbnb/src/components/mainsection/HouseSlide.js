@@ -28,6 +28,7 @@ function HouseSlide(props) {
         nextArrow:false,
     }
 
+
     
 
     const showpicture = props.picture;
