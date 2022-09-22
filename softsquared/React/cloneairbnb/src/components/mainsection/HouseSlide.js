@@ -36,13 +36,13 @@ function HouseSlide(props) {
     <div className='wrap-houseslide'>
         <Slider className='slick-slider-house' {...settings}>
             <div className='block-house'>
-                <img src={showpicture[0]} />
+                <img src={showpicture[0]} onClick={props.click} />
             </div>
             <div className='block-house'>
-                <img src={showpicture[1]}></img>
+                <img src={showpicture[1]} onClick={props.click}></img>
             </div>
             <div className='block-house'>
-                <img src={showpicture[2]}></img>
+                <img src={showpicture[2]} onClick={props.click}></img>
             </div>
         </Slider>
     </div>

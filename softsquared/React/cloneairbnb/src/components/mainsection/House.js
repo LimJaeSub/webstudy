@@ -5,6 +5,7 @@ import HouseInformation from "./HouseInformation.js";
 import "./House.css";
 function House(props) {
   const picture = props.picture;
+  console.log(picture);
   const information = {
     key: props.key,
     housename: props.housename,
@@ -25,8 +26,8 @@ function House(props) {
 
   return (
     <div className="wrap-house">
-      <div onClick={onClickHouseSlide}>
-        <HouseSlide picture={picture} />
+      <div>
+        <HouseSlide picture={picture} click={onClickHouseSlide} />
       </div>
       <HouseInformation information={information} />
     </div>
