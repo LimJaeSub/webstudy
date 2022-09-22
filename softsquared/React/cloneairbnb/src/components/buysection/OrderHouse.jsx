@@ -1,5 +1,6 @@
 import React from 'react'
 import Header2 from '../Header2.js';
+import UserReview from './UserReview.jsx';
 function orderHouse() {
   return (
     <div>
@@ -18,6 +19,9 @@ function orderHouse() {
             <div className='house-picture-item'>사진5</div>
           </div>
 
+          <div>
+            fixed nav 임
+          </div>
           <div className='housedetail'>
             <div className='detail-1'>
               <h3>집주인 님이 호스팅하는 섬</h3>
@@ -44,6 +48,12 @@ function orderHouse() {
               <h3>집이름에서 n박</h3>
               <span>보낼날짜</span>
             </div>
+            <div className='review'>
+              <h3>평점 후기 133개</h3>
+              <div className='userreview-container'>
+                <UserReview />
+              </div>
+            </div>
           </div>
         </div>
     </div>
@@ -51,3 +61,8 @@ function orderHouse() {
 }
 
 export default orderHouse
+
+
+// fix 변수를 useState로 설정
+// 이후 windowscroll이 일정 이상 넘어가면 sexfix로 true 반환
+// 클래스명을 삼항연산자로 설정
