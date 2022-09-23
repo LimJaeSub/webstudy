@@ -5,7 +5,6 @@ import HouseInformation from "./HouseInformation.js";
 import "./House.css";
 function House(props) {
   const picture = props.picture;
-  console.log(picture);
   const information = {
     key: props.key,
     housename: props.housename,
@@ -13,6 +12,8 @@ function House(props) {
     distance: props.distance,
     price: props.price,
     star: props.star,
+    owner: props.owner,
+    maxpeople: props.maxpeople,
   };
   const navigate = useNavigate();
   const onClickHouseSlide = () => {

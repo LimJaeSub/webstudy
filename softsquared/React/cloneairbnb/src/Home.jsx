@@ -28,7 +28,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house1, __house2, __house3],
-      housetitle: "별이 ",
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 2,
@@ -39,6 +40,8 @@ const HouseData = [
       price: 255114,
       star: "★ 4.87",
       picture: [__house4, __house5, __house6],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 3,
@@ -49,6 +52,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house7, __house8, __house9],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 4,
@@ -59,6 +64,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house1, __house5, __house9],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 5,
@@ -69,6 +76,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house2, __house8, __house6],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 6,
@@ -79,6 +88,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house3, __house10, __house9],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 7,
@@ -89,6 +100,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house4, __house7, __house9],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 8,
@@ -99,6 +112,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house5, __house8, __house10],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 9,
@@ -109,6 +124,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 10,
@@ -119,6 +136,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house7, __house4, __house3],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 11,
@@ -129,6 +148,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house8, __house1, __house2],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 12,
@@ -139,6 +160,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house9, __house10, __house4],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 13,
@@ -149,6 +172,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 14,
@@ -159,6 +184,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 15,
@@ -169,6 +196,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 16,
@@ -179,6 +208,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 17,
@@ -189,6 +220,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 18,
@@ -199,6 +232,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 19,
@@ -209,6 +244,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 20,
@@ -219,6 +256,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
     {
       key: 21,
@@ -229,6 +268,8 @@ const HouseData = [
       price: 128642,
       star: "★ 4.87",
       picture: [__house6, __house5, __house1],
+      owner:"Daleep",
+      maxpeople:[2,1,1],
     },
   ];
 
@@ -257,6 +298,8 @@ function Home() {
                 price={data.price}
                 star={data.star}
                 picture={data.picture}
+                owner={data.owner}
+                maxpeople={data.maxpeople}
               ></House>
             ))}
           </section>
