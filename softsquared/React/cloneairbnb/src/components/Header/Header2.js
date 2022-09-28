@@ -2,7 +2,7 @@ import React from "react";
 import SearchBar2 from "./SearchBar2.js";
 import UserTools from "./UserTools.js";
 import "./Header2.css";
-import logo from "../img/airbnblogo.png";
+import logo from "../../img/airbnblogo.png";
 import { Link } from "react-router-dom";
 
 function Header2() {

@@ -1,5 +1,5 @@
-import NavSlide from "./components/NavSlide.js";
-import Header from './components/Header.js';
+import NavSlide from "./components/Header/NavSlide.js";
+import Header from './components/Header/Header.js';
 import House from "./components/mainsection/House.js";
 import React, { useState } from "react";
 import { BrowserRouter, Route, Link, Routes } from "react-router-dom";
@@ -280,6 +280,11 @@ function Home() {
     const getData = (HouseType) => {
       setHouseType(HouseType);
     };
+
+
+
+    // media query
+    
   
     const filterarray = HouseData.filter((it) => it.houseStyle === housetype);
   return (

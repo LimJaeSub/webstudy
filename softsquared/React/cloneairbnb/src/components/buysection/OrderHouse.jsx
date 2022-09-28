@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react'
-import Header2 from '../Header2.js';
+import Header2 from '../Header/Header2.js';
 import UserReview from './UserReview.jsx';
 import {useLocation} from 'react-router-dom';
 import './OrderHouse.css';

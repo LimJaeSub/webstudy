@@ -135,7 +135,6 @@ html{
     background-color:white;
     /* border:1px solid black; */
     width:100%;
-    
 }
 .dropdown-menu.active{
     visibility: visible;
