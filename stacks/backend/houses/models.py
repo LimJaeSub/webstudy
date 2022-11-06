@@ -22,3 +22,10 @@ class House(models.Model):
 
     def __str__(self):
         return self.name
+
+# User (Django)
+# 일반적인 django 유저
+# Profile
+# 그 유저의 프로필(이미지,카카오톡 로그인,sns로그인 등등)
+
+# 새 프로젝트를 시작할때 usermodel을 만들어야한다.
